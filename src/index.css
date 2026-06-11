@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 기존 HTML 파일들에서 공통적으로 사용되던 스타일 정의 */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-transition {
+    transition: background-color 0.3s ease;
+}
+
+.header-scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fd;
+    color: #191c1f;
+}
+
+h1, h2, h3, h4, h5, h6, .font-headline-sm, .font-headline-md, .font-headline-lg, .font-headline-xl, .font-label-md {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.soft-shadow {
+    box-shadow: 0 3px 5px rgba(136, 136, 136, 0.5);
+}
+
+.soft {
+    border-radius: 0.125rem;
+    box-shadow: 0 3px 5px rgba(136, 136, 136, 0.5);
+    padding: 10px 20px 5px 20px;
+    background-color: white;
+}
+
+.soft-box {
+    border-radius: 0.125rem;
+    box-shadow: 0 3px 5px rgba(136, 136, 136, 0.5);
+    background-color: #ffffff; /* theme('colors.surface-container-lowest') fallback */
+}
+
+/* Material Symbols CSS */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Swiper custom navigation styles (for Home slider) */
+.heroSwiper .swiper-button-next,
+.heroSwiper .swiper-button-prev {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.heroSwiper .swiper-button-next:after,
+.heroSwiper .swiper-button-prev:after {
+    font-size: 20px;
+}
+.heroSwiper .swiper-button-next:hover,
+.heroSwiper .swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+.heroSwiper .swiper-pagination-bullet-active {
+    background: #004a6f !important;
+}

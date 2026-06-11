@@ -1,0 +1,153 @@
+{
+  "designSystems": [
+    {
+      "name": "assets/6171c614d1904584becfef860fd558de",
+      "designSystem": {
+        "displayName": "Corporate Modern",
+        "styleGuidelines": "## Brand & Style\n\nThis design system embodies a professional, established, and corporate aesthetic. It strikes a balance between traditional business reliability and modern digital clarity. Drawing inspiration from structured editorial layouts and classic web frameworks, the personality is authoritative yet approachable. \n\nThe visual style is **Corporate / Modern**, characterized by a structured grid, clear typographic hierarchies, and a palette that favors deep neutrals with purposeful splashes of color. It avoids unnecessary ornamentation in favor of functional depth, utilizing subtle shadows and precise spacing to guide the user through information-dense environments.\n\n## Layout & Spacing\n\nThis design system follows a **fluid grid** model based on a 12-column responsive architecture. Content is housed within a centered container that adapts to screen width, utilizing standard gutters to maintain consistent internal alignment.\n\nThe vertical rhythm is defined by significant white space between major sections\u2014specifically roughly 80px of padding\u2014to ensure the layout feels breathable despite the information density. Mobile reflow occurs at a 1024px breakpoint, where the header transitions from a transparent, floating state to a solid, stacked layout.\n\n## Elevation & Depth\n\nHierarchy is established through **ambient shadows** and tonal layering. The system avoids flat minimalism in favor of subtle tactile depth.\n\nKey components use a specific \"soft\" shadow: a 3px offset with a 5px blur in a mid-gray tone (#888888). This creates a physical \"lifted\" effect for cards and container boxes. Background images in the hero area utilize a black overlay to ensure white text maintains high contrast, adding a layer of perceived depth between the UI and the imagery.\n\n## Components\n\n### Buttons\nButtons are rectangular with a 2px radius. The primary CTA (Hero Button) features a bold border and centered text, utilizing a fade-in animation for entry. Hover states should trigger the Secondary Highlight color (#d65050).\n\n### Box Elements (.soft)\nThese are the primary card-like containers. They must feature a 2px border radius and the signature 3px/5px shadow. Padding is asymmetrical to accommodate specific alignment needs: 10px top, 20px right, and minimal bottom padding to let the shadow define the edge.\n\n### Navigation\nThe header is dynamic. On scroll, it transitions to a 90% opaque black background. Navigation links are set in Source Sans Three at 14px, appearing white on dark backgrounds and switching to the Highlight Red on hover.\n\n### Inputs & Fields\nFields should follow the 2px roundedness of the system. Borders should be thin and neutral, becoming primary blue on focus.\n\n### Hero Slider\nThe hero area is a fixed-height container (300px) that centers typography and buttons both vertically and horizontally. It utilizes motion (fadeInRightBig) to draw attention to the primary site messaging.",
+        "theme": {
+          "colorMode": "LIGHT",
+          "font": "SOURCE_SANS_THREE",
+          "roundness": "ROUND_FOUR",
+          "customColor": "#266289",
+          "headlineFont": "SOURCE_SANS_THREE",
+          "bodyFont": "RALEWAY",
+          "labelFont": "SOURCE_SANS_THREE",
+          "namedColors": {
+            "background": "#f8f9fd",
+            "error": "#ba1a1a",
+            "error_container": "#ffdad6",
+            "inverse_on_surface": "#f0f1f4",
+            "inverse_primary": "#96ccf9",
+            "inverse_surface": "#2e3133",
+            "on_background": "#191c1f",
+            "on_error": "#ffffff",
+            "on_error_container": "#93000a",
+            "on_primary": "#ffffff",
+            "on_primary_container": "#b2dbff",
+            "on_primary_fixed": "#001e30",
+            "on_primary_fixed_variant": "#004b71",
+            "on_secondary": "#ffffff",
+            "on_secondary_container": "#6d000f",
+            "on_secondary_fixed": "#410005",
+            "on_secondary_fixed_variant": "#8b1820",
+            "on_surface": "#191c1f",
+            "on_surface_variant": "#41474e",
+            "on_tertiary": "#ffffff",
+            "on_tertiary_container": "#ffcf8c",
+            "on_tertiary_fixed": "#291800",
+            "on_tertiary_fixed_variant": "#624000",
+            "outline": "#71787f",
+            "outline_variant": "#c1c7cf",
+            "overlay-black": "rgba(0,0,0,0.9)",
+            "primary": "#004a6f",
+            "primary_container": "#266289",
+            "primary_fixed": "#cbe6ff",
+            "primary_fixed_dim": "#96ccf9",
+            "secondary": "#ac3134",
+            "secondary_container": "#fd6d6b",
+            "secondary_fixed": "#ffdad7",
+            "secondary_fixed_dim": "#ffb3af",
+            "surface": "#f8f9fd",
+            "surface-dark": "#1c1c1c",
+            "surface-footer": "#252525",
+            "surface_bright": "#f8f9fd",
+            "surface_container": "#edeef1",
+            "surface_container_high": "#e7e8ec",
+            "surface_container_highest": "#e1e2e6",
+            "surface_container_low": "#f3f3f7",
+            "surface_container_lowest": "#ffffff",
+            "surface_dim": "#d9dadd",
+            "surface_tint": "#28638a",
+            "surface_variant": "#e1e2e6",
+            "tertiary": "#613f00",
+            "tertiary_container": "#7e550d",
+            "tertiary_fixed": "#ffddb2",
+            "tertiary_fixed_dim": "#f4bd6e",
+            "text-primary": "#767676",
+            "text-secondary": "#666666"
+          },
+          "designMd": "---\nname: Corporate Modern\ncolors:\n  surface: '#f8f9fd'\n  surface-dim: '#d9dadd'\n  surface-bright: '#f8f9fd'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f3f3f7'\n  surface-container: '#edeef1'\n  surface-container-high: '#e7e8ec'\n  surface-container-highest: '#e1e2e6'\n  on-surface: '#191c1f'\n  on-surface-variant: '#41474e'\n  inverse-surface: '#2e3133'\n  inverse-on-surface: '#f0f1f4'\n  outline: '#71787f'\n  outline-variant: '#c1c7cf'\n  surface-tint: '#28638a'\n  primary: '#004a6f'\n  on-primary: '#ffffff'\n  primary-container: '#266289'\n  on-primary-container: '#b2dbff'\n  inverse-primary: '#96ccf9'\n  secondary: '#ac3134'\n  on-secondary: '#ffffff'\n  secondary-container: '#fd6d6b'\n  on-secondary-container: '#6d000f'\n  tertiary: '#613f00'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#7e550d'\n  on-tertiary-container: '#ffcf8c'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#cbe6ff'\n  primary-fixed-dim: '#96ccf9'\n  on-primary-fixed: '#001e30'\n  on-primary-fixed-variant: '#004b71'\n  secondary-fixed: '#ffdad7'\n  secondary-fixed-dim: '#ffb3af'\n  on-secondary-fixed: '#410005'\n  on-secondary-fixed-variant: '#8b1820'\n  tertiary-fixed: '#ffddb2'\n  tertiary-fixed-dim: '#f4bd6e'\n  on-tertiary-fixed: '#291800'\n  on-tertiary-fixed-variant: '#624000'\n  background: '#f8f9fd'\n  on-background: '#191c1f'\n  surface-variant: '#e1e2e6'\n  text-primary: '#767676'\n  text-secondary: '#666666'\n  surface-dark: '#1c1c1c'\n  surface-footer: '#252525'\n  overlay-black: rgba(0,0,0,0.9)\ntypography:\n  headline-xl:\n    fontFamily: Source Sans Three\n    fontSize: 52px\n    fontWeight: '600'\n    lineHeight: '1.2'\n  headline-lg:\n    fontFamily: Source Sans Three\n    fontSize: 42px\n    fontWeight: '600'\n    lineHeight: '1.2'\n  headline-md:\n    fontFamily: Source Sans Three\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: '1.3'\n  headline-sm:\n    fontFamily: Source Sans Three\n    fontSize: 25px\n    fontWeight: '600'\n    lineHeight: '1.4'\n  title-lg:\n    fontFamily: Source Sans Three\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: '1.2'\n  body-lg:\n    fontFamily: Raleway\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Raleway\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-md:\n    fontFamily: Source Sans Three\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: '1.2'\n  headline-xl-mobile:\n    fontFamily: Source Sans Three\n    fontSize: 36px\n    fontWeight: '600'\n    lineHeight: '1.2'\n  headline-lg-mobile:\n    fontFamily: Source Sans Three\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: '1.2'\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  container-max: 1170px\n  gutter: 30px\n  margin-mobile: 15px\n  section-padding-top: 83px\n  section-padding-bottom: 80px\n  hero-height: 300px\n---\n\nGreen GLASS Design System (design.md)\n1. Overview\n\n\nTheme: WordPress 'Sydney' theme (by aThemes)\n\nFramework: Bootstrap (Grid layout applied)\n\nIcon Libraries: FontAwesome 4.1.0, Dashicons\n2. Color Palette\nKey color values extracted from inline CSS and applied classes.\nCategoryColor Code (Hex/RGBA)Application AreaPrimary Text#767676Default body text colorSecondary Text#666666Footer area text and linksHighlight (Hover)#d65050Hover color for main navigation linksAccent Blue#266289Additional description text (<small>) inside box components (.soft)White#ffffffSite title/description, navigation links, slider textBackground 1#000000Header background on mobile resolutions, header image overlayBackground 2rgba(0,0,0,0.9)Translucent background for the floating header on scrollBackground 3#1c1c1cMain sub-menu background, site footer backgroundBackground 4#252525Footer widgets area background\n3. Typography\nTwo primary font families are loaded and used via Google Fonts.\n\n\nHeadings/Primary: Source Sans Pro (Weights: 400, 400italic, 600)\n\nBody/Secondary: Raleway (Weights: 400, 500, 600)\nFont Size Rules by Tag\n\n\nBody Text: 14px\n\nMain Site Title (.site-title): 32px\n\nSite Description (.site-description): 16px\n\nMain Menu Links: 14px\n\nH1: 52px\n\nH2: 42px\n\nH3: 32px\n\nH4: 25px\n\nH5: 20px\n\nH6: 18px\n4. Layout & Spacing\n\n\nGrid System: Utilizes Bootstrap's .container, .row, and responsive 12-column structure (e.g., .col-md-4, .col-sm-8, .col-xs-12).\n\nMobile Breakpoint: At screen widths of 1024px or below, the header transitions to a mobile layout (solid black background).\n\nKey Spacing Rules:\n\n\nPage Body Wrapper (.page-wrap): Top padding 83px, bottom padding 80px.\n\nHeader Background Image (.header-image): Fixed height of 300px, scaled to fit (background-size: cover).\n5. UI Components\n\n\nBox Elements (.soft):\n\n\nBorder-radius: 2px\n\nBox-shadow: 3px 3px 5px #888888 (adds visual depth)\n\nSpacing: Margin 20px 20px 20px 10px, Padding 10px 20px 1px 0px\n\nPreloader: Displays a loading animation using .spinner and two bouncing elements (.pre-bounce1, .pre-bounce2) upon entering the page.\n\nMain Hero Slider (.sydney-hero-area):\n\n\nCenters text (.text-slider) and a call-to-action button (.roll-button.button-slider) over a background image.\n\nApplies a fade-in animation (animated fadeInRightBig) to the text elements.\n",
+          "colorVariant": "FIDELITY",
+          "overridePrimaryColor": "#266289",
+          "overrideSecondaryColor": "#d65050",
+          "spacingScale": 2,
+          "typography": {
+            "body-lg": {
+              "fontFamily": "Raleway",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "1.6"
+            },
+            "body-md": {
+              "fontFamily": "Raleway",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "1.6"
+            },
+            "headline-lg": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "42px",
+              "fontWeight": "600",
+              "lineHeight": "1.2"
+            },
+            "headline-lg-mobile": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "32px",
+              "fontWeight": "600",
+              "lineHeight": "1.2"
+            },
+            "headline-md": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "32px",
+              "fontWeight": "600",
+              "lineHeight": "1.3"
+            },
+            "headline-sm": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "25px",
+              "fontWeight": "600",
+              "lineHeight": "1.4"
+            },
+            "headline-xl": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "52px",
+              "fontWeight": "600",
+              "lineHeight": "1.2"
+            },
+            "headline-xl-mobile": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "36px",
+              "fontWeight": "600",
+              "lineHeight": "1.2"
+            },
+            "label-md": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "1.2"
+            },
+            "title-lg": {
+              "fontFamily": "Source Sans Three",
+              "fontSize": "32px",
+              "fontWeight": "600",
+              "lineHeight": "1.2"
+            }
+          },
+          "spacing": {
+            "container-max": "1170px",
+            "gutter": "30px",
+            "hero-height": "300px",
+            "margin-mobile": "15px",
+            "section-padding-bottom": "80px",
+            "section-padding-top": "83px"
+          },
+          "headlineFontFamily": "Source Sans Three",
+          "bodyFontFamily": "Raleway",
+          "labelFontFamily": "Source Sans Three"
+        }
+      },
+      "version": "1"
+    }
+  ]
+}

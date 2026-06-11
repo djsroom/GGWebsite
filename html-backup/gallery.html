@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery - Green Glass</title>
+<!-- Google Fonts: Source Sans Three & Raleway -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Instructions -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#291800",
+                    "surface-container-highest": "#e1e2e6",
+                    "on-secondary-fixed-variant": "#8b1820",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#28638a",
+                    "on-surface-variant": "#41474e",
+                    "inverse-surface": "#2e3133",
+                    "surface-variant": "#e1e2e6",
+                    "surface-container": "#edeef1",
+                    "surface-dim": "#d9dadd",
+                    "secondary-fixed": "#ffdad7",
+                    "tertiary": "#613f00",
+                    "surface-container-high": "#e7e8ec",
+                    "on-tertiary-container": "#ffcf8c",
+                    "primary": "#004a6f",
+                    "overlay-black": "rgba(0,0,0,0.9)",
+                    "on-background": "#191c1f",
+                    "surface-container-low": "#f3f3f7",
+                    "on-surface": "#191c1f",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#410005",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c1c7cf",
+                    "primary-fixed-dim": "#96ccf9",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#001e30",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "text-primary": "#767676",
+                    "tertiary-container": "#7e550d",
+                    "surface-dark": "#1c1c1c",
+                    "background": "#f8f9fd",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#ac3134",
+                    "inverse-primary": "#96ccf9",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#6d000f",
+                    "primary-fixed": "#cbe6ff",
+                    "primary-container": "#266289",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9fd",
+                    "on-primary-container": "#b2dbff",
+                    "tertiary-fixed": "#ffddb2",
+                    "secondary-fixed-dim": "#ffb3af",
+                    "on-primary": "#ffffff",
+                    "text-secondary": "#666666",
+                    "tertiary-fixed-dim": "#f4bd6e",
+                    "inverse-on-surface": "#f0f1f4",
+                    "secondary-container": "#fd6d6b",
+                    "surface-bright": "#f8f9fd",
+                    "on-primary-fixed-variant": "#004b71",
+                    "surface-footer": "#252525",
+                    "outline": "#71787f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "30px",
+                    "section-padding-top": "83px",
+                    "section-padding-bottom": "80px",
+                    "hero-height": "300px",
+                    "container-max": "1170px",
+                    "margin-mobile": "15px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Source Sans 3"],
+                    "headline-xl": ["Source Sans 3"],
+                    "body-lg": ["Raleway"],
+                    "headline-lg-mobile": ["Source Sans 3"],
+                    "title-lg": ["Source Sans 3"],
+                    "label-md": ["Source Sans 3"],
+                    "headline-md": ["Source Sans 3"],
+                    "headline-xl-mobile": ["Source Sans 3"],
+                    "headline-lg": ["Source Sans 3"],
+                    "body-md": ["Raleway"]
+            },
+            "fontSize": {
+                    "headline-sm": ["25px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-xl": ["52px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "title-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["42px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Base styles enforcing the design system rules */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            font-family: 'Raleway', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* The Box Element (.soft) style rule */
+        .soft-box {
+            border-radius: theme('borderRadius.DEFAULT'); /* 2px radius */
+            box-shadow: 0 3px 5px rgba(136, 136, 136, 0.5); /* Ambient shadow */
+            background-color: theme('colors.surface');
+            transition: all 0.3s ease;
+        }
+        
+        .soft-box:hover {
+            box-shadow: 0 5px 12px rgba(136, 136, 136, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Specific asymmetric padding requested */
+        .soft-padding {
+            padding: 10px 20px 8px 16px;
+        }
+
+        /* Hero Animation */
+        @keyframes fadeInRightBig {
+            0% { opacity: 0; transform: translateX(50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        .animate-fade-in-right {
+            animation: fadeInRightBig 0.8s ease-out forwards;
+        }
+
+        /* Gallery Filter Transitions */
+        .gallery-item {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .gallery-item.hide {
+            opacity: 0;
+            transform: scale(0.95);
+            pointer-events: none;
+            position: absolute;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+<!-- TopNavBar (Generated from JSON) -->
+<header class="w-full top-0 sticky z-50 bg-surface dark:bg-surface-dark shadow-[0_3px_5px_rgba(136,136,136,0.3)] dark:shadow-none header-transition" id="main-header">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="index.html">
+                Green Glass
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 text-label-md font-label-md uppercase tracking-wider" href="index.html">Home</a>
+<!-- Active State Applied Here based on JSON Rules -->
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md uppercase tracking-wider" href="gallery.html">Gallery</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 text-label-md font-label-md uppercase tracking-wider" href="about-us.html">About Us</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 text-label-md font-label-md uppercase tracking-wider" href="contact-us.html">Contact Us</a>
+</nav>
+<!-- Trailing Action -->
+<button class="hidden md:block px-6 py-2 bg-primary text-on-primary rounded font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors duration-300 shadow-[0_3px_5px_rgba(136,136,136,0.5)]">
+                Get a Quote
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full h-[300px] relative flex items-center justify-center overflow-hidden bg-surface-container">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Modern Glass Building" class="w-full h-full object-cover object-center" data-alt="A wide architectural shot of a modern corporate building exterior featuring expansive, floor-to-ceiling green-tinted glass panels reflecting a bright, clear sky. The structural framework is crisp and minimalist, emphasizing clean geometric lines and premium construction quality. The lighting is high-key and natural, creating a professional, established, and bright corporate aesthetic. The overall mood conveys transparency, structural integrity, and contemporary design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrXff5uxUQiI0Tc8sw8X9Bl8_9rYukQoSldTVP0J6UHcth9DIsCC5F5nwWWZX5Besbj4O8v2XuJIpSTWiX0r_rar82w7i8dBjgxHmGefG_rt12KT6JnbVbjhhR3HgZTVltj7UiGFpJLZYcsMKeqPDYWCjpeGnJ5OqlCZA7lYPdP-EYhbB0E5rZdYRunlLHyxXkXbbSYEciGoIZ-V6w_dis1coxBlodAFQKYjOsWw4kygnW5UYEQ3uxbv23ASKYz4dKlFz13ksl5q0"/>
+<div class="absolute inset-0 bg-overlay-black opacity-60"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 text-center px-4 animate-fade-in-right max-w-container-max mx-auto">
+<h1 class="text-headline-xl font-headline-xl text-white mb-4 tracking-tight">Our Portfolio</h1>
+<p class="text-headline-sm font-headline-sm text-surface-variant max-w-2xl mx-auto opacity-95">
+                Explore our comprehensive showcase of structural elegance. From expansive commercial facades to precise residential installations, discover clarity defined.
+            </p>
+</div>
+</section>
+<!-- Main Content Area -->
+<main class="flex-grow w-full px-gutter max-w-container-max mx-auto pt-section-padding-top pb-section-padding-bottom">
+<!-- Filter Controls -->
+<div class="flex flex-wrap justify-center gap-4 mb-12 border-b border-surface-container pb-6">
+<button class="filter-btn active text-label-md font-label-md px-6 py-2 rounded bg-primary text-on-primary border border-primary transition-colors" data-filter="all">All Projects</button>
+<button class="filter-btn text-label-md font-label-md px-6 py-2 rounded bg-surface border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors" data-filter="commercial">Commercial</button>
+<button class="filter-btn text-label-md font-label-md px-6 py-2 rounded bg-surface border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors" data-filter="residential">Residential</button>
+<button class="filter-btn text-label-md font-label-md px-6 py-2 rounded bg-surface border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors" data-filter="custom">Custom Installations</button>
+</div>
+<!-- Gallery Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[300px]" id="gallery-grid">
+<!-- Item 1: Commercial (Large) -->
+<a class="gallery-item commercial lg:col-span-2 lg:row-span-2 soft-box flex flex-col overflow-hidden group cursor-pointer relative" href="project-detail.html">
+<div class="w-full h-full relative overflow-hidden flex-grow">
+<img alt="Commercial Skyscraper" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A towering corporate skyscraper viewed from a low angle, its entire facade composed of sleek, reflective blue-green glass panels seamlessly joined. The rigid grid structure of the mullions highlights the precision of the installation. The lighting is bright daylight, reflecting soft white clouds on the glass surface. The visual style is highly professional, conveying corporate strength and modern architectural engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt6dH3N_7lVoO1CvGqubl3PkW_wOeafFGs1kMRFllrHGOrihp6WO3TtIEAU7crG5nSlLA535Z_R3qr6tt4dTSiK4NK39GTNCfUMoPFgd7P-75DLf5hHZdwmI0zEMcWMAIzI3l9iLPJ76i_u50DQFCOfS0UvmVKTLYcl8h_j2DaLqxK91CM-dWcppXlC_kExmmENfPvF4bqQjLcmrlag1R6zi_oY7WQLxYp7n0TnxI9sU1gXNcbgr_AlHtbThTxxLCgXfoTjz60iF4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full soft-padding text-white">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary-fixed-dim block mb-1">Commercial</span>
+<h3 class="text-headline-sm font-headline-sm">Apex Financial Tower</h3>
+<p class="text-body-md font-body-md text-surface-variant mt-2 hidden md:block">Complete exterior envelope utilizing high-efficiency thermal glazing.</p>
+</div>
+</a>
+<!-- Item 2: Residential -->
+<div class="gallery-item residential soft-box flex flex-col overflow-hidden group cursor-pointer relative">
+<div class="w-full h-full relative overflow-hidden flex-grow">
+<img alt="Residential Sliding Doors" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious modern residential home interior featuring massive, floor-to-ceiling sliding glass doors that open up entirely to an outdoor patio and pool. The framing is minimal, black aluminum. The interior is brightly lit with natural light, showcasing minimalist furniture and clean lines. The overall aesthetic is upscale residential, emphasizing seamless indoor-outdoor living through expansive structural glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh8bLmgiw_SEKxR-vDqu-MHc0cVg-Sp7-otr8ourXO4kqLlSV86UcxjpqBuWLd8SuEBohE0OKrfVuWxjNHoFaQCNixK4w3oXs_Jy44R5nJxkN_fsPm4Fm-LLa_RpYa3EL_G43kv_K8OpCoONuGOmJ88sD_MNuxzATpFok09Y_z0WUib98wfSMAUc71pVqey3r-17PEpfwM_TwI4zSep0I0sumrMMCtqIOmFndVpqkPNv_cpdrTRZghstdCJTqTCgDf-ezAn9defRo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full soft-padding text-white">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary-fixed-dim block mb-1">Residential</span>
+<h3 class="text-headline-sm font-headline-sm text-xl">Horizon Villa</h3>
+</div>
+</div>
+<!-- Item 3: Custom -->
+<div class="gallery-item custom soft-box flex flex-col overflow-hidden group cursor-pointer relative">
+<div class="w-full h-full relative overflow-hidden flex-grow">
+<img alt="Custom Glass Staircase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detail shot of a custom interior glass staircase in a high-end corporate atrium. The steps are made of thick, frosted structural glass, supported by brushed steel fittings. The surrounding space is bright, minimal, and clinical, utilizing a stark white and cool grey color palette. The image conveys precision engineering, luxury custom fabrication, and a pristine modern architectural style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiUbC8waPoloSWZvX8DXF-0YimeIxd6srIiA51jQUTRRWhUhHvjus1wrSQRlO0ejodrY4Dm-c_VNM6-IXpBkpJ99oxqBX5FcGjq9kD-7RIfMgMreo6UcHa2wZsM5gHnzp4tqxKW0FKZWsKZ9jFVQLG-8cX9nMljLtD220scStptWDGFQ2GLq0givgo_I6oerJLaRuUXO5TdM39i9LpAgYCJFqFpy9REUSuh8Zr_4--33nM47PmPFHrYP9yWap1SQpOm4O80pSHYp0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full soft-padding text-white">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary-fixed-dim block mb-1">Custom</span>
+<h3 class="text-headline-sm font-headline-sm text-xl">Atrium Stairway</h3>
+</div>
+</div>
+<!-- Item 4: Commercial -->
+<div class="gallery-item commercial soft-box flex flex-col overflow-hidden group cursor-pointer relative">
+<div class="w-full h-full relative overflow-hidden flex-grow">
+<img alt="Glass Partition Walls" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An expansive modern corporate office interior featuring frameless glass partition walls that separate meeting rooms from a bright hallway. The glass is crystal clear, accented with subtle frosted banding for privacy. The space features deep neutral tones, polished concrete floors, and stark white ceilings. The visual tone is highly organized, professional, and established, characteristic of high-end corporate interiors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWtx5IoYSrhN4XLZsA9OweOPE2svd5wkF306b-xTz7pGqQF_QhYuBsQKQwKEvAyTUIiDPkb9qxlix8ISd2jOZE0vTlgKAN82iO1auWNWFzZhwBuvU5kFq9gG0ZnHJiAQbVm2txl0xUMrE0vBDetimju0E791HebEAL1BTzZnLpXYZ5deHKTjZhLnulkHgGZQOQn9gjTQXDqbS1ZlF2lx44Pc76VAJ0FTAfLYLvWP5FmW2_aRnnM9LFmdw_-aoI9Uo8iHSF2oegvYg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full soft-padding text-white">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary-fixed-dim block mb-1">Commercial</span>
+<h3 class="text-headline-sm font-headline-sm text-xl">Tech Hub Partitions</h3>
+</div>
+</div>
+<!-- Item 5: Residential (Wide) -->
+<div class="gallery-item residential md:col-span-2 soft-box flex flex-col overflow-hidden group cursor-pointer relative">
+<div class="w-full h-full relative overflow-hidden flex-grow">
+<img alt="Contemporary Home Window Wall" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="The exterior of a striking contemporary residential home at dusk, featuring a massive, two-story custom window wall that dominates the facade. The warm interior light glows through the expansive glass, contrasting with the cool blue evening sky. The framing is dark and structured. The image exudes high-end residential luxury, utilizing deep tonal contrasts and a structured grid layout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVR-4Udpn-JhxCmgBHz7z3OyMmDbvFuG55x-Y6RX9Z_2DU5zX0U6Y863XU-vUeioVaxvPeu7R_2D3QJwKSV3C8zETq1DTf-R_7xCFaGPrMih4N9Rxta3eI_i6ioK7z7NsSSnHJ5dg5DuKQeNiMehIhHFRG92RqvXbJ9e-1Kka7m4MwsqUErcIFvhb_BxdrBty-JNVhGiSmeSEBCb3GCFzSZpcO_l5ErmywF5f0AbUTcf7lOQsenL7IxR-Y9U7JxP7lae6i2Rqzsmw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full soft-padding text-white">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary-fixed-dim block mb-1">Residential</span>
+<h3 class="text-headline-sm font-headline-sm">Lakeside Retreat</h3>
+<p class="text-body-md font-body-md text-surface-variant mt-2 hidden md:block">Double-height structural window wall maximizing natural light and views.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Generated from JSON) -->
+<footer class="w-full pt-section-padding-top pb-section-padding-bottom bg-surface-footer border-t border-outline-variant mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto px-gutter">
+<!-- Brand & Copyright -->
+<div class="flex flex-col space-y-4">
+<span class="text-headline-sm font-headline-sm text-white tracking-tight">Green Glass</span>
+<p class="text-body-md font-body-md text-on-primary-fixed-variant">
+                    © 2024 Green Glass. Dedicated to Perfection.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col space-y-3">
+<h4 class="text-label-md font-label-md text-surface-variant uppercase tracking-wider mb-2">Services</h4>
+<a class="text-body-md font-body-md text-on-primary-fixed-variant hover:text-secondary-fixed hover:translate-x-1 transition-all duration-200" href="#">Installation</a>
+<a class="text-body-md font-body-md text-on-primary-fixed-variant hover:text-secondary-fixed hover:translate-x-1 transition-all duration-200" href="#">Eco-Friendly Construction</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col space-y-3">
+<h4 class="text-label-md font-label-md text-surface-variant uppercase tracking-wider mb-2">Company</h4>
+<a class="text-body-md font-body-md text-on-primary-fixed-variant hover:text-secondary-fixed hover:translate-x-1 transition-all duration-200" href="contact-us.html">Contact Us</a>
+<a class="text-body-md font-body-md text-on-primary-fixed-variant hover:text-secondary-fixed hover:translate-x-1 transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-body-md font-body-md text-on-primary-fixed-variant hover:text-secondary-fixed hover:translate-x-1 transition-all duration-200" href="#">Search</a>
+</div>
+</div>
+</footer>
+<!-- Lightweight JS for Header Scroll & Filtering -->
+<script>
+        // Header Scroll Effect (as per design system rules)
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.remove('bg-surface');
+                header.classList.add('bg-overlay-black');
+                // Adjust text colors for dark background
+                const links = header.querySelectorAll('nav a:not(.text-secondary)');
+                const brand = header.querySelector('a.text-primary');
+                brand.classList.remove('text-primary');
+                brand.classList.add('text-white');
+                links.forEach(link => {
+                    link.classList.remove('text-on-surface');
+                    link.classList.add('text-white');
+                });
+            } else {
+                header.classList.add('bg-surface');
+                header.classList.remove('bg-overlay-black');
+                // Revert text colors
+                const links = header.querySelectorAll('nav a:not(.text-secondary)');
+                const brand = header.querySelector('a.text-white');
+                if(brand) {
+                    brand.classList.add('text-primary');
+                    brand.classList.remove('text-white');
+                }
+                links.forEach(link => {
+                    link.classList.add('text-on-surface');
+                    link.classList.remove('text-white');
+                });
+            }
+        });
+
+        // Simple Gallery Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button styles
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-on-primary', 'active');
+                    b.classList.add('bg-surface', 'text-on-surface-variant');
+                });
+                btn.classList.remove('bg-surface', 'text-on-surface-variant');
+                btn.classList.add('bg-primary', 'text-on-primary', 'active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.classList.remove('hide');
+                        setTimeout(() => {
+                            item.style.position = 'relative';
+                        }, 50);
+                    } else {
+                        item.classList.add('hide');
+                        // Small timeout to allow fade out before collapsing space
+                        setTimeout(() => {
+                            if(item.classList.contains('hide')){
+                                item.style.position = 'absolute';
+                            }
+                        }, 400);
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apex Financial Tower - Green Glass</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#004a6f",
+                      "error": "#ba1a1a",
+                      "tertiary": "#613f00",
+                      "primary-fixed-dim": "#96ccf9",
+                      "overlay-black": "rgba(0,0,0,0.9)",
+                      "on-surface": "#191c1f",
+                      "surface-container": "#edeef1",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#291800",
+                      "secondary-fixed": "#ffdad7",
+                      "on-surface-variant": "#41474e",
+                      "surface-variant": "#e1e2e6",
+                      "tertiary-fixed-dim": "#f4bd6e",
+                      "text-secondary": "#666666",
+                      "surface-dark": "#1c1c1c",
+                      "on-primary-fixed": "#001e30",
+                      "outline": "#71787f",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#ffb3af",
+                      "secondary-container": "#fd6d6b",
+                      "on-tertiary-container": "#ffcf8c",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#f0f1f4",
+                      "inverse-surface": "#2e3133",
+                      "on-secondary-fixed-variant": "#8b1820",
+                      "surface-container-highest": "#e1e2e6",
+                      "inverse-primary": "#96ccf9",
+                      "tertiary-fixed": "#ffddb2",
+                      "tertiary-container": "#7e550d",
+                      "on-primary": "#ffffff",
+                      "on-primary-container": "#b2dbff",
+                      "surface-bright": "#f8f9fd",
+                      "on-background": "#191c1f",
+                      "primary-fixed": "#cbe6ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f8f9fd",
+                      "surface-container-high": "#e7e8ec",
+                      "on-primary-fixed-variant": "#004b71",
+                      "on-tertiary-fixed-variant": "#624000",
+                      "text-primary": "#767676",
+                      "primary-container": "#266289",
+                      "surface-dim": "#d9dadd",
+                      "surface-footer": "#252525",
+                      "on-secondary-container": "#6d000f",
+                      "secondary": "#ac3134",
+                      "outline-variant": "#c1c7cf",
+                      "background": "#f8f9fd",
+                      "surface-tint": "#28638a",
+                      "on-secondary-fixed": "#410005",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-low": "#f3f3f7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1170px",
+                      "margin-mobile": "15px",
+                      "section-padding-top": "83px",
+                      "section-padding-bottom": "80px",
+                      "hero-height": "300px",
+                      "gutter": "30px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Raleway"
+                      ],
+                      "title-lg": [
+                              "Source Sans 3"
+                      ],
+                      "headline-sm": [
+                              "Source Sans 3"
+                      ],
+                      "label-md": [
+                              "Source Sans 3"
+                      ],
+                      "headline-xl-mobile": [
+                              "Source Sans 3"
+                      ],
+                      "headline-xl": [
+                              "Source Sans 3"
+                      ],
+                      "headline-md": [
+                              "Source Sans 3"
+                      ],
+                      "headline-lg-mobile": [
+                              "Source Sans 3"
+                      ],
+                      "headline-lg": [
+                              "Source Sans 3"
+                      ],
+                      "body-md": [
+                              "Raleway"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "25px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "52px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "42px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        .soft {
+            border-radius: 0.125rem;
+            box-shadow: 0 3px 5px rgba(136, 136, 136, 0.5);
+        }
+        
+        @keyframes fadeInRightBig {
+            from {
+                opacity: 0;
+                transform: translate3d(50px, 0, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .animate-fade-in-right {
+            animation: fadeInRightBig 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg text-body-lg antialiased">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-surface shadow-[0_3px_5px_rgba(136,136,136,0.5)] transition-all duration-300 header-transition" id="main-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="index.html">
+                Green Glass
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 text-label-md font-label-md uppercase tracking-wider" href="index.html">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md uppercase tracking-wider" href="gallery.html">Gallery</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 text-label-md font-label-md uppercase tracking-wider" href="about-us.html">About Us</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 text-label-md font-label-md uppercase tracking-wider" href="contact-us.html">Contact Us</a>
+</div>
+<button class="hidden md:block px-6 py-2 bg-primary text-on-primary rounded font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors duration-300 shadow-[0_3px_5px_rgba(136,136,136,0.5)]">
+                Get a Quote
+            </button>
+<button class="md:hidden text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] min-h-[400px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A breathtaking, low-angle shot of a massive, modern glass skyscraper reaching into a clear blue sky. The sleek, reflective facade mirrors the surrounding urban environment, showcasing complex, high-performance structural glazing. The lighting is bright and clear, emphasizing a corporate, authoritative, yet cutting-edge architectural aesthetic in a light-mode color palette of deep steel blues and crisp whites." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqi-4zZUDmnAJXeoElNn4Sfg5XfsjKLG3vNPQb09fs91tU3NSgez2bVA2yyeGnjizbFbKoINwpjo8N8JxyvXPhy_UlZqkbKRujykYfR1ZNdC1KEGzynm0TZZFtGD6iCINDF_ISnkBEhQC0w7OIFLk1cNmOgBqjNl-tbclrtno-_Nca_jBcBGzTNH5qz0vr4kbxv6ijz_n_gWFcRd3roIAby7pJGb8lqh-cLd6PPf_AUpJuBeJlcnFwroxvCUj8ulq_lWYq3n1v-ZU');">
+<div class="absolute inset-0 bg-overlay-black opacity-60"></div>
+</div>
+<div class="relative z-10 text-center px-gutter max-w-container-max mx-auto animate-fade-in-right opacity-0">
+<h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-white mb-4 tracking-tight">Apex Financial Tower</h1>
+<p class="text-headline-sm font-headline-sm text-surface-container-lowest opacity-90 max-w-2xl mx-auto">Commercial Excellence in San Francisco</p>
+</div>
+</section>
+<!-- Project Overview -->
+<section class="py-section-padding-top pb-section-padding-bottom px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Story -->
+<div class="lg:col-span-8 space-y-6">
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary">The Vision Made Reality</h2>
+<div class="space-y-4 text-on-surface-variant text-body-lg font-body-lg leading-relaxed">
+<p>
+                            Rising 45 stories above the financial district, the Apex Financial Tower represents a pinnacle of modern architectural glazing. The project demanded a facade that could withstand immense wind loads while maximizing natural light penetration and maintaining strict thermal efficiency standards required for LEED Platinum certification.
+                        </p>
+<p>
+                            Green Glass was contracted to engineer and install over 200,000 square feet of custom curtain wall. Our solution utilized state-of-the-art Low-E, triple-glazed panels that significantly reduce solar heat gain without sacrificing transparency. The intricate structural silicone glazing system provides a seamless, monolithic appearance from the exterior, reflecting the city skyline with pristine clarity.
+                        </p>
+<p>
+                            One of the most significant challenges was the installation of the striking 3-story glass atrium at the base. This required custom-engineered glass fins for structural support, eliminating the need for bulky metal mullions and creating a truly transparent, inviting entrance for the corporate tenants above.
+                        </p>
+</div>
+</div>
+<!-- Right Column: Specs Card -->
+<div class="lg:col-span-4">
+<div class="bg-surface soft p-[10px_20px_20px_20px] h-full border border-surface-variant flex flex-col">
+<h3 class="text-headline-md font-headline-md text-primary mb-6 border-b border-surface-variant pb-4">Technical Specifications</h3>
+<dl class="space-y-5 flex-grow">
+<div>
+<dt class="text-label-md font-label-md text-text-secondary uppercase tracking-wider mb-1">Project Scope</dt>
+<dd class="text-body-lg font-body-lg text-on-surface font-semibold">200,000 sq ft Curtain Wall</dd>
+</div>
+<div>
+<dt class="text-label-md font-label-md text-text-secondary uppercase tracking-wider mb-1">Glass Type</dt>
+<dd class="text-body-lg font-body-lg text-on-surface font-semibold">Low-E, Triple Glazed Insulated Units</dd>
+</div>
+<div>
+<dt class="text-label-md font-label-md text-text-secondary uppercase tracking-wider mb-1">Structural System</dt>
+<dd class="text-body-lg font-body-lg text-on-surface font-semibold">Custom Silicone Glazed Curtain Wall &amp; Glass Fins</dd>
+</div>
+<div>
+<dt class="text-label-md font-label-md text-text-secondary uppercase tracking-wider mb-1">Building Height</dt>
+<dd class="text-body-lg font-body-lg text-on-surface font-semibold">45 Stories</dd>
+</div>
+<div>
+<dt class="text-label-md font-label-md text-text-secondary uppercase tracking-wider mb-1">Sustainability</dt>
+<dd class="text-body-lg font-body-lg text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+                                    LEED Platinum Certified
+                                </dd>
+</div>
+</dl>
+<div class="mt-8 pt-4 border-t border-surface-variant">
+<button class="w-full bg-surface-container-high text-on-surface hover:bg-secondary hover:text-white transition-colors duration-300 py-3 rounded soft text-label-md font-label-md flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                                Download Case Study
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Gallery Bento Grid -->
+<section class="bg-surface-container-low py-section-padding-top pb-section-padding-bottom">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary">Installation &amp; Detail</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-2">Precision at every connection.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<!-- Large Feature Image -->
+<div class="md:col-span-2 md:row-span-2 soft overflow-hidden group cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, highly detailed view of the pristine, seamless glass joints on a modern commercial skyscraper facade. The image focuses on the precise engineering of the structural silicone glazing, with crisp reflections of the sky and adjacent buildings. The overall aesthetic is clean, corporate, and technically sophisticated, dominated by architectural blues and subtle grey tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdkuUEqg7LGe7DCyqboWViR5SodGxfI-olIuRcfo-smowzk3tGeUlirvGuwqrvEsWFZsxESeuvM7OMZARu8WnRpOY7Pk9bGeQUP4auCe-q081IEsRc2SnUiAbOucWQ8d67XkT8dXiWw1juiVKsSOoOfZD0Bay_Q3PA6s3i3qwLMH9ojD6USsdn9ORzvG9e-9XsVx2IcylRyH8TmEsCgHUMvasrc1wJ3zr7S__FbzrWkeAnN0SJ1iR9OpCZHH9BKUBPJkvinSgyFo8');">
+</div>
+</div>
+<!-- Smaller Image 1 -->
+<div class="soft overflow-hidden group cursor-pointer relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="text-white text-label-md font-label-md">Atrium Fins</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="An interior shot looking out through a massive, multi-story glass atrium. The focus is on the vertical structural glass fins supporting the exterior glazing, bathed in bright, natural daylight. The mood is expansive and professional, highlighting modern corporate architecture with a minimalist, clean aesthetic in light mode." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJIHIHUWj2lka92JYXMx6T7riyAEgfaGpYSOaGCig5E2QfyM1dAr8j48jXM4_JmvtQxBzad4Qy_Ipd6AS6QxD7Ts_BRctkHcRvI_uAsQF3P29hqyvnmDl8dRGJNL9v7z_Fpng6oPatoCHFOxL9jmhSdMvUPopbvzP5PaCS8rwVNfinAX8cH8n2y2nxfafMIpz9c6G5Yg9-ycY_-qiK9fAdccPcWUI9tA8jRlqxe5HrUF4EQIoDM6yzhH9338rpv8M5tNpIOp9p8eU');">
+</div>
+</div>
+<!-- Smaller Image 2 -->
+<div class="soft overflow-hidden group cursor-pointer relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="text-white text-label-md font-label-md">Curtain Wall Details</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A detailed, abstract composition showing the repetitive geometric pattern of a modern skyscraper's glass and metal curtain wall system. The lighting is stark and clear, emphasizing the clean lines and reflective surfaces. The palette features cool corporate blues and silver metallics, conveying precision and architectural excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtRpDC3bt34clzNyMFUFsVCYbFWtMvjfCYWa8B-p0HGzHKlKlaM5bPZry72R50OlaHmU-myaM295HHfRW-ikGpRLnUR-0t4hlIYE1pWkxItDVMiHZuFM0duhjnLyJ7bX00Z2eq7T5_nAZMz2x_TOcGvoeYtMKh4nm6aWr_Xj90_LasB32d3JQg5uljpcCiA3SRLjRp3bHyxCH6JaRc_XLTDaEbCaGvbSj3LCfsnzHDnill14atF5o7idrm3t2fzuI4E4PZtGLhdmw');">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Similar Projects -->
+<section class="py-section-padding-top pb-section-padding-bottom max-w-container-max mx-auto px-gutter">
+<h2 class="text-headline-md font-headline-md text-primary text-center mb-12">More Commercial Excellence</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="bg-surface soft border border-surface-variant flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 w-full bg-cover bg-center overflow-hidden" data-alt="A striking view of a contemporary glass office building reflecting the bright morning sun. The facade features a mix of clear and subtly tinted blue glazing, framed by minimal mullions. The image projects a sense of modern business reliability and high-end construction in a clean, light-mode corporate style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3sLaMe5kwBwm-BYpRoup1U6S1IUu-5CdkmJGegVEPp5eLeKESsmYi6gYxU5-quTN1FAJs61GX_-1P8wlv1R8SL6jLLOZTvfzSl4VkgSWMWh5MyaKgIcIWTEuFO1px-47vK_J-vAVlx3QPHyiNoN6_EdCFssAyJZ8n18t823ZOD-3kOLmTRVq7aF1W4sbOMSR75G09_EzY85WUUF-JGHdoZeqHVVnZbEkFdilNyzumbruFNZGQRR0KT4LgJY6m-3KpwkUV4JBiZ-s');">
+</div>
+<div class="p-[20px_20px_10px_20px] flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-secondary transition-colors">Vertex Plaza</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">Complete renovation of a prominent 1980s office park with dynamic electrochromic smart glass.</p>
+<div class="mt-auto flex items-center text-secondary text-label-md font-label-md font-bold">
+                            View Project <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-surface soft border border-surface-variant flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 w-full bg-cover bg-center overflow-hidden" data-alt="A sleek, modern corporate headquarters building featuring an expansive, curved glass curtain wall. The smooth, uninterrupted glass surface reflects the surrounding landscape and sky, demonstrating advanced architectural glazing capabilities. The lighting is bright and professional, fitting a high-fidelity, modern corporate web aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQoJfVPvPfbwiybRIAcIEcFWSj-1fJMvhYDYHuIjOQtvi7MTPYkgToGRUzgDnvwRoQFpkh1pJMYNNm-r82xk-oErA39R2C3kEqAaYSBlcKqCd-qSewuFXtXP1_nlJe2czFXonS6Y4stQx4eqIX74USxdQqkgnuK-MgByS-fVhsTQFY9YozE2XZiaJluOOMBgp5tCnEDK2dmgHKZt_hrlMQZe62Xf_w0hK5RH5sAl8ZOAQ7hvwJRNnAF3W_jlspiEkuz2J7skZLMJU');">
+</div>
+<div class="p-[20px_20px_10px_20px] flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-secondary transition-colors">Lumina HQ</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">A sweeping, curved curtain wall installation for a flagship corporate campus in Silicon Valley.</p>
+<div class="mt-auto flex items-center text-secondary text-label-md font-label-md font-bold">
+                            View Project <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="bg-surface soft border border-surface-variant flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300 hidden lg:flex">
+<div class="h-48 w-full bg-cover bg-center overflow-hidden" data-alt="A dramatic upward perspective of a tall, geometric skyscraper clad entirely in dark, reflective glass. The sharp angles and pristine surface emphasize precision engineering and monumental scale. The image relies on deep blue tones and crisp reflections to create a sense of authoritative corporate power and modern design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWfjNZmL8tLXTJn2hJw2donInPM14Bl8M6kS1qfLBG9jTARzPuZkg7moLIQ_-y1fH-75mPZo9O11O0_4GGyavoECVuh2jusj9D1KgDlxptIvBDQAHfO4fFblv7P7f3OymKp2R-d4Nia3AQWZzJodUTOE-ky_Lb0ld08atTe_H0WLNLZx4nU7DnfjQ-_2f9-CDqysFedJCMXfrUVF6mCz-3X6FGDdc0hpsgaAUX72xTbo90iwhAeH_IW8TJPQ5kT__LyV2SVG0rgwE');">
+</div>
+<div class="p-[20px_20px_10px_20px] flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-secondary transition-colors">The Monolith</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-2">High-performance acoustic glazing solutions for an urban residential tower near major transit hubs.</p>
+<div class="mt-auto flex items-center text-secondary text-label-md font-label-md font-bold">
+                            View Project <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-footer border-t border-outline-variant w-full pt-section-padding-top pb-section-padding-bottom">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col gap-4">
+<span class="text-headline-sm font-headline-sm text-white">Green Glass</span>
+<p class="text-body-md font-body-md text-surface-variant opacity-80">
+                    © 2024 Green Glass. Dedicated to Perfection.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-body-md font-body-md text-surface-variant hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200" href="#">Installation</a>
+<a class="text-body-md font-body-md text-surface-variant hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200" href="#">Eco-Friendly Construction</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-body-md font-body-md text-surface-variant hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200" href="contact-us.html">Contact Us</a>
+<a class="text-body-md font-body-md text-surface-variant hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200" href="#">Privacy Policy</a>
+<a class="text-body-md font-body-md text-surface-variant hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200" href="#">Search</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for TopNavBar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-opacity-90', 'backdrop-blur-sm');
+                nav.classList.remove('bg-opacity-100');
+            } else {
+                nav.classList.add('bg-opacity-100');
+                nav.classList.remove('bg-opacity-90', 'backdrop-blur-sm');
+            }
+        });
+    </script>
+</body></html>
