@@ -1,16 +1,47 @@
-# React + Vite
+# GGWebsite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official repository for **GGWebsite** (Green Glass website). Built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features & Stack
+- **Framework**: React 19 + Vite 8
+- **Styles**: Tailwind CSS
+- **Design system**: Fully integrated responsive design system
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting Started
 
-## React Compiler
+### Prerequisites
+Make sure you have Node.js installed (v18+ recommended).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
+Clone the repository, navigate to the project root, and install the dependencies:
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+### Development
+Run the local development server:
+```bash
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Build
+Build the production-ready assets:
+```bash
+npm run build
+```
+
+---
+
+## Deployment to Cloudflare Pages
+
+This project is set up for easy deployment on **Cloudflare Pages**.
+
+### Steps to Deploy via GitHub Integration:
+1. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com/).
+2. Navigate to **Workers & Pages** -> **Create application** -> **Pages** -> **Connect to Git**.
+3. Select this repository (`GGWebsite`).
+4. Configure the following build settings:
+   - **Framework Preset**: `Vite` (or `None`)
+   - **Build Command**: `npm run build`
+   - **Build Output Directory**: `dist`
+5. Click **Save and Deploy**. Cloudflare Pages will automatically rebuild and deploy on every push to the `main` branch.
