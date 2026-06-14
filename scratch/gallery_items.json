@@ -1,0 +1,386 @@
+[
+  {
+    "id": 1,
+    "category": "Retail Building",
+    "image": "/images/-DSC00000   Auto Dealer-- Prosche Beverly Hills.jpg",
+    "title": "Auto Dealer (Porsche)",
+    "location": "Porsche Beverly Hills",
+    "large": false
+  },
+  {
+    "id": 2,
+    "category": "Glass Railing",
+    "image": "/images/Glass Railing_DSC2065-1  Glass Railing--Westwood.jpg",
+    "title": "Glass Railing",
+    "location": "Westwood",
+    "large": false
+  },
+  {
+    "id": 3,
+    "category": "Glass Railing",
+    "image": "/images/Glass Railing_DSC2817-1   Glass Railing--Costa Mesa.jpg",
+    "title": "Glass Railing",
+    "location": "Costa Mesa",
+    "large": true
+  },
+  {
+    "id": 4,
+    "category": "Glass Railing",
+    "image": "/images/Glass Railing_DSC2822-1   Glass Railing--Costa Mesa.jpg",
+    "title": "Glass Railing",
+    "location": "Costa Mesa",
+    "large": false
+  },
+  {
+    "id": 5,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2005-1 Mixed-use --Glendale.jpg",
+    "title": "Mixed-use",
+    "location": "Glendale",
+    "large": true
+  },
+  {
+    "id": 6,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2011-1 Mixed-use--West Hollywood.jpg",
+    "title": "Mixed-use",
+    "location": "West Hollywood",
+    "large": false
+  },
+  {
+    "id": 7,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2018-1 Mixed-use--West Hollywood.jpg",
+    "title": "Mixed-use",
+    "location": "West Hollywood",
+    "large": false
+  },
+  {
+    "id": 8,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2049-1  Mixed-use--North Hollywood.jpg",
+    "title": "Mixed-use",
+    "location": "North Hollywood",
+    "large": false
+  },
+  {
+    "id": 9,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2069-1  Mixed-use--Westwood.jpg",
+    "title": "Mixed-use",
+    "location": "Westwood",
+    "large": false
+  },
+  {
+    "id": 10,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2086-1  Mixed-use--Pasadena.jpg",
+    "title": "Mixed-use",
+    "location": "Pasadena",
+    "large": true
+  },
+  {
+    "id": 11,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2101-1  Mized-use--West Hollywood.jpg",
+    "title": "Mixed-use",
+    "location": "West Hollywood",
+    "large": false
+  },
+  {
+    "id": 12,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2112-1  Mixed-use-- Old Pasadena.jpg",
+    "title": "Mixed-use",
+    "location": "Old Pasadena",
+    "large": false
+  },
+  {
+    "id": 13,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2118-1  Mixed-use --Pasadena.jpg",
+    "title": "Mixed-use",
+    "location": "Pasadena",
+    "large": false
+  },
+  {
+    "id": 14,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2127-1  Mixed-use--Pasadena.jpg",
+    "title": "Mixed-use",
+    "location": "Pasadena",
+    "large": false
+  },
+  {
+    "id": 15,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2133-1  Mixed-use--Pasadena.jpg",
+    "title": "Mixed-use",
+    "location": "Pasadena",
+    "large": false
+  },
+  {
+    "id": 16,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2155-1  Mixed-use--Irvine.JPG",
+    "title": "Mixed-use",
+    "location": "Irvine",
+    "large": true
+  },
+  {
+    "id": 17,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2750-1   Mixed-use--West Hollywood.jpg",
+    "title": "Mixed-use",
+    "location": "West Hollywood",
+    "large": false
+  },
+  {
+    "id": 18,
+    "category": "Mixed-use",
+    "image": "/images/Mixed-use_DSC2802-1  Mixed-use Pasadena.jpg",
+    "title": "Mixed-use",
+    "location": "Pasadena",
+    "large": false
+  },
+  {
+    "id": 19,
+    "category": "Office Building",
+    "image": "/images/Office Building_DSC2022-1  Office Building--West Hollywood.jpg",
+    "title": "Office Building",
+    "location": "West Hollywood",
+    "large": true
+  },
+  {
+    "id": 20,
+    "category": "Office Building",
+    "image": "/images/Office Building_DSC2045-1  Office Building--Culver City.jpg",
+    "title": "Office Building",
+    "location": "Culver City",
+    "large": false
+  },
+  {
+    "id": 21,
+    "category": "Office Building",
+    "image": "/images/Office Building_DSC2146-1  Office Building--Brea.jpg",
+    "title": "Office Building",
+    "location": "Brea",
+    "large": false
+  },
+  {
+    "id": 22,
+    "category": "Office Building",
+    "image": "/images/Office Building_DSC2810-1   Office Building--Pasadena.jpg",
+    "title": "Office Building",
+    "location": "Pasadena",
+    "large": false
+  },
+  {
+    "id": 23,
+    "category": "Retail Building",
+    "image": "/images/Retail Building_DSC2037-1  Retail Building--Mid Wilshire.jpg",
+    "title": "Retail Building",
+    "location": "Mid Wilshire",
+    "large": false
+  },
+  {
+    "id": 24,
+    "category": "Retail Building",
+    "image": "/images/Retail Building_DSC2110-1  Retail Building--Pasadena.jpg",
+    "title": "Retail Building",
+    "location": "Pasadena",
+    "large": true
+  },
+  {
+    "id": 25,
+    "category": "Retail Building",
+    "image": "/images/Retail Building_DSC2775-1  Retail Building--Huntington Beach.jpg",
+    "title": "Retail Building",
+    "location": "Huntington Beach",
+    "large": false
+  },
+  {
+    "id": 26,
+    "category": "Retail Building",
+    "image": "/images/Retail Building_DSC2777-1  Retail Building--Huntington Beach.jpg",
+    "title": "Retail Building",
+    "location": "Huntington Beach",
+    "large": false
+  },
+  {
+    "id": 27,
+    "category": "Retail Building",
+    "image": "/images/Retail Building_DSC2779-1   Retail Building--Wetchester.jpg",
+    "title": "Retail Building",
+    "location": "Westchester",
+    "large": true
+  },
+  {
+    "id": 28,
+    "category": "Retail Building",
+    "image": "/images/Retail Building_DSC2786-1   Retail Building--Seal Beach.jpg",
+    "title": "Retail Building",
+    "location": "Seal Beach",
+    "large": false
+  },
+  {
+    "id": 29,
+    "category": "Senior Housing",
+    "image": "/images/Senior Housing_DSC000000  Senior Housing -- Rolling Hills.jpg",
+    "title": "Senior Housing",
+    "location": "Rolling Hills",
+    "large": true
+  },
+  {
+    "id": 30,
+    "category": "Senior Housing",
+    "image": "/images/Senior Housing_DSC2806-1   Senior Housing--West Covina.jpg",
+    "title": "Senior Housing",
+    "location": "West Covina",
+    "large": false
+  },
+  {
+    "id": 31,
+    "category": "Tilt-up Building",
+    "image": "/images/Tilt-up Building_DSC000000   Tilt-up Building-- Pacoima.jpg",
+    "title": "Tilt-up Building",
+    "location": "Pacoima",
+    "large": false
+  },
+  {
+    "id": 32,
+    "category": "Tilt-up Building",
+    "image": "/images/Tilt-up Building_DSC1958-1  Tilt-up  Building --Redlands.jpg",
+    "title": "Tilt-up Building",
+    "location": "Redlands",
+    "large": true
+  },
+  {
+    "id": 33,
+    "category": "Tilt-up Building",
+    "image": "/images/Tilt-up Building_DSC1959-1  Tilt-up Building-- Redlands.jpg",
+    "title": "Tilt-up Building",
+    "location": "Redlands",
+    "large": false
+  },
+  {
+    "id": 34,
+    "category": "Tilt-up Building",
+    "image": "/images/Tilt-up Building_DSC1988-1 Tilt-up Building--Ontario.jpg",
+    "title": "Tilt-up Building",
+    "location": "Ontario",
+    "large": false
+  },
+  {
+    "id": 35,
+    "category": "Hotel",
+    "image": "/images/_DSC00000   Hotel Redondo Beach.jpg",
+    "title": "Boutique Hotel",
+    "location": "Redondo Beach",
+    "large": false
+  },
+  {
+    "id": 36,
+    "category": "Hotel",
+    "image": "/images/_DSC00000  Hotel.jpg",
+    "title": "Luxury Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 37,
+    "category": "Hotel",
+    "image": "/images/_DSC1971-1   Hotel --Hyatt Riverside.jpg",
+    "title": "Hyatt Hotel",
+    "location": "Riverside",
+    "large": true
+  },
+  {
+    "id": 38,
+    "category": "Hotel",
+    "image": "/images/_DSC1975-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 39,
+    "category": "Hotel",
+    "image": "/images/_DSC2060-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 40,
+    "category": "Hotel",
+    "image": "/images/_DSC2073-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 41,
+    "category": "Hotel",
+    "image": "/images/_DSC2079-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 42,
+    "category": "Hotel",
+    "image": "/images/_DSC2114-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": true
+  },
+  {
+    "id": 43,
+    "category": "Hotel",
+    "image": "/images/_DSC2137-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 44,
+    "category": "Hotel",
+    "image": "/images/_DSC2752-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 45,
+    "category": "Hotel",
+    "image": "/images/_DSC2759-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 46,
+    "category": "Hotel",
+    "image": "/images/_DSC2828-1   Glass Canopy--Costa Mesa.jpg",
+    "title": "Glass Canopy",
+    "location": "Costa Mesa",
+    "large": false
+  },
+  {
+    "id": 47,
+    "category": "Hotel",
+    "image": "/images/_DSC2830-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  },
+  {
+    "id": 48,
+    "category": "Hotel",
+    "image": "/images/_DSC2832-1.jpg",
+    "title": "Hotel",
+    "location": "Southern California",
+    "large": false
+  }
+]
