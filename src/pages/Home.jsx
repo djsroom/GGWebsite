@@ -38,9 +38,9 @@ export default function Home() {
       subtitle: "We want exactly what you envision"
     },
     {
-      image: "/images/Slides/No Arm.jpg",
-      title: "Quality Glazing",
-      subtitle: "Reliable and durable glass solutions"
+      image: "/images/Slides/gg-anniversary.jpg",
+      title: "30th Anniversary!",
+      subtitle: "Thank you for your business!"
     }
   ];
 
