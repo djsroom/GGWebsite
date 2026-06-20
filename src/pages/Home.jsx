@@ -39,8 +39,8 @@ export default function Home() {
     },
     {
       image: "/images/Slides/gg-anniversary.jpg",
-      title: "30th Anniversary!",
-      subtitle: "Thank you for your business!"
+      title: "Celebrating 30 years in business!",
+      subtitle: "Thank you for being a part of our journey!"
     }
   ];
 

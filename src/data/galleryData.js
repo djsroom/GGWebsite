@@ -63,7 +63,7 @@ export const galleryProjects = [
   {
     "id": "hotel-riverside",
     "category": "Hotel",
-    "title": "Hyatt Hotel",
+    "title": "Hotel",
     "location": "Riverside",
     "images": [
       "/images/Hotel --Hyatt Riverside.jpg"
@@ -73,7 +73,7 @@ export const galleryProjects = [
   {
     "id": "hotel-redondo-beach",
     "category": "Hotel",
-    "title": "Boutique Hotel",
+    "title": "Hotel",
     "location": "Redondo Beach",
     "images": [
       "/images/Hotel Redondo Beach.jpg"
@@ -83,7 +83,7 @@ export const galleryProjects = [
   {
     "id": "hotel-southern-california",
     "category": "Hotel",
-    "title": "Luxury Hotel",
+    "title": "Hotel",
     "location": "Southern California",
     "images": [
       "/images/Hotel.jpg"

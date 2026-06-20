@@ -76,12 +76,10 @@ function getProjectDetails(filename) {
   let title = category;
   if (category === 'Hotel') {
     if (location === 'Riverside' || location.includes('Hyatt')) {
-      title = 'Hyatt Hotel';
+      title = 'Hotel';
       location = 'Riverside';
-    } else if (location === 'Redondo Beach') {
-      title = 'Boutique Hotel';
-    } else if (location === 'Southern California') {
-      title = 'Luxury Hotel';
+    } else {
+      title = 'Hotel';
     }
   } else if (category === 'Mixed-use') {
     if (location.includes('Toll Brothers') || location.includes('Anaheim')) {
