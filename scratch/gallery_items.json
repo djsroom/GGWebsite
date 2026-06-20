@@ -275,7 +275,7 @@
     "id": 35,
     "category": "Hotel",
     "image": "/images/_DSC00000   Hotel Redondo Beach.jpg",
-    "title": "Boutique Hotel",
+    "title": "Hotel",
     "location": "Redondo Beach",
     "large": false
   },
@@ -283,7 +283,7 @@
     "id": 36,
     "category": "Hotel",
     "image": "/images/_DSC00000  Hotel.jpg",
-    "title": "Luxury Hotel",
+    "title": "Hotel",
     "location": "Southern California",
     "large": false
   },
@@ -291,7 +291,7 @@
     "id": 37,
     "category": "Hotel",
     "image": "/images/_DSC1971-1   Hotel --Hyatt Riverside.jpg",
-    "title": "Hyatt Hotel",
+    "title": "Hotel",
     "location": "Riverside",
     "large": true
   },

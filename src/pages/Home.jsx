@@ -112,9 +112,9 @@ export default function Home() {
                   style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMqokJqy5Ia61BrBM9C5m4yYZr6EQaH5-t76RW_Pek9SmsLjnhUd_W761DcxzdGMYkobztxmTMXzTH0xzhdYOLDUjE8IJdXUFrUtDEJXJmt9jugNkH5mGB0zw98J_k3TKXuL2mGOnYdBKV13gxj4FqPGuE5co3XF4KnnAOOoaldSjTHG8oOf9NMZBaBNvQ57zOk4diV9FtabwA2UFjDQW75kyLbksRc1Ycat8p9Y-VtFEU9Ezv9ezrub9jHBYzWd13BYYUPk7dal4')` }}
                 ></div>
               </div>
-              <h3 className="font-headline-sm text-headline-sm text-primary mb-3 pl-2 border-l-4 border-secondary">Dedicated to Perfection</h3>
+              <h3 className="font-headline-sm text-headline-sm text-primary mb-3 pl-2 border-l-4 border-secondary">Estimating & Preconstruction Support</h3>
               <p className="font-body-md text-body-md text-text-primary pl-2 mb-2">
-                Green Glass is committed to provide exceptional customer service and always striving for quality work. Our expertise to manufacture with detail and provide a smooth installment is our end-goal is for each client. Our quality reinforced glass is promised to look great and stay durable.
+                We provide detailed estimating services built on accuracy, clarity, and a thorough understanding of glazing systems. By carefully reviewing plans, specifications, and scope requirements, we deliver reliable proposals designed to support organized planning from the earliest stages.
               </p>
             </div>
             {/* Feature Card 2 */}
@@ -125,9 +125,9 @@ export default function Home() {
                   style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCY0DgcKYe0zWvA0kikcq23bxoighTv4pUqLnDMCuCI7oLtC7lcK6DAisNxQnYpQaSFt98RwhrXWZraCLoKzd4BLjeeP3PwU7xgiVxhA_4Q3n4nO2tg8zNs7w9PCUvf3Dx5fEmTKD0bs5j4iKgo6MA2_pNd0UouScQiFLNzzc4xc5d6Vm9rNNBohRLnXTklitZwD1isZvfvMpTK6daZD_4OGrZvRSYW2zb_jjw5DUXjMXXwtzUl3jxp05FMkLGvAtJpNfX4TpGaIaw')` }}
                 ></div>
               </div>
-              <h3 className="font-headline-sm text-headline-sm text-primary mb-3 pl-2 border-l-4 border-secondary">Installation</h3>
+              <h3 className="font-headline-sm text-headline-sm text-primary mb-3 pl-2 border-l-4 border-secondary">Quality Performance </h3>
               <p className="font-body-md text-body-md text-text-primary pl-2 mb-2">
-                With the measurements given from your blueprints, we will begin to carve out quality glass to fit the necessary applications. An installation team will be deployed to assist in making sure everything is a perfect fit!
+                Our glazing work is completed with attention to function, durability, and long-term reliability. We provide solutions that are made to support the demands of commercial spaces while maintaining a clean and professional finish.
               </p>
             </div>
             {/* Feature Card 3 */}
@@ -138,9 +138,9 @@ export default function Home() {
                   style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1-jLTVssPSUAFbueB_4YtB-UsFa9oVe5Mifyd5CFmoYv1trihuH4S0YqtXUytNC8m0L7E2FLyc8re-ZZOuPWCFFaSHkSOrF7fUmt2JVM6NX9ANErWArS-HSMrr7qO6V27I5Bz7-zjEcdT77i5tJAJB-Xmq95rlwDL_VREgptvaMiShs8d2fnmNigd-hnw1Rjza-qn5zdaGWhmYdLcrcmAAs8MdiwbBI5CqnJjVxWZocC45FbC2fsZI88139AK0NYvc3zKjW1jvKw')` }}
                 ></div>
               </div>
-              <h3 className="font-headline-sm text-headline-sm text-primary mb-3 pl-2 border-l-4 border-secondary">Eco-Friendly Construction</h3>
+              <h3 className="font-headline-sm text-headline-sm text-primary mb-3 pl-2 border-l-4 border-secondary">Trusted Glazing Partner</h3>
               <p className="font-body-md text-body-md text-text-primary pl-2 mb-2">
-                Glass can be one of the hardest thing to reuse, especially after it has been broken. We re-flame the glass to be refined and reused in our construction. Allowing waste to be minimal and provide a more green and eco-friendly process!
+                We are more than an installation team; we are a reliable partner throughout the construction process. Our clients count on us for professionalism, accountability, and quality work that supports the success of each project.
               </p>
             </div>
           </div>
