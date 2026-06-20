@@ -13,36 +13,41 @@ export default function Home() {
 
   const slides = [
     {
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQiMex6WL2AwhQK2hQmrFJIsksEw22yIxmOS-Ow9F07uAG_AskpVYEQgzBJLBiGwQWDrDVQTb5kWctKXZ9HCTaPRZH0-G20jqUer3MOgkDGvHymg-IshBLQkdyxFI7qJmHHT7NNEr0kozeXAlmdYrfVty0BFSQUmQzpNC7c9yVeFwzqSZW6dQcxl6X7OnN3oHiOTGx2yVU2lsDncH5N49HiH9ErJypViwH-noyUY3yOPcXGJMstxuQzu_LQKgToUhDJP99qongz-U",
+      image: "/images/Slides/breather-181289.jpg",
       title: "Green Glass",
       subtitle: "Constructed to fit your needs!"
     },
     {
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDnFSvih6Kj2Ig2ma3NanzgExlbf1l25RC4rcSgnpPQnW2G-OW649Oifxzp-XIQqP7pv9eMNsAPRSPheP34EKVow7Agtc-ixePUjA2vuZ3YF0yqENqXsaKGZwsM6Vaf2fD6YpGkd1822aslueySCo2_uoXEXzy6YzlJshanDdJB3Du95w-j4V37-CM1EFXhCySR7kWtXeCyDl1ik5aR0jqAG6lo4X5hMqNbEmTTqWZfPgAm5ioN0H7CDpgPNvii_uUa9F3YfxRXttY",
+      image: "/images/Slides/nico-villanueva-156055.jpg",
       title: "Commercial to Residential",
       subtitle: "Sizes from buildings to homes!"
     },
     {
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBK8dEyPv-FiV5j-DTvj66ruKaca_vAr7vp3WlIJF8MvGVAQj0JQjvw6SZe8J7MUUBXNMDvpChqgWy8bZpujlrEJh2n56-sdmJ0zF3f9obh9z-M-1iVCPITbM5DN_mtQbcok2ID_V0k3k8EXjZzLSIXvjmdKuqfQoAOIOj8EUF3Bi_2Ts5_iPtWqqc1kYHsLzaS5islx_FPp8eEdhlmvQ8SVsH47G-FewUuXpNSIJEKoo-pIT86q-jXaNZVPkEX6oWzIlCg8fiMU2s",
+      image: "/images/Slides/kristine-weilert-316176.jpg",
       title: "Home Goods",
       subtitle: "Shapes to fit your room!"
     },
     {
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQCOM9e1CTra6y7fm731IgQsaOdQZwYlPZyN1KwhKTG6sjzUNTEiTUU9xS_sA6VEC-KWfFtsSz1aeNE3lQYtXt3XjzRGfdFMN2K-7O6axnNqHF-_wLwqrBCs-_4fIq9QrAFjb0VRm619CGtDFdQ8-ryHdkLPEdKjnD5b83nlUTsLSDdEk0-9kn2GOdeb2iou4_DtknRLSqaWhD-YRaNOA7i2IPqjTNbOQ9fbCpBsI1NXlj9LIlBgtUHbzlRU-wkMxFUNoT6H18hHY",
+      image: "/images/Slides/the-anchor-28036.jpg",
       title: "Installation Made Easy",
       subtitle: "Working with your vision!"
     },
     {
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBMYkjBB6VEGr9T6h5tL0Mo4ktdaJ-3F_sXJI0n1goVNX4TRW-mR5_A3OJF7jaUe5jE1RLU0UTlpJxlPM343tdPuH8TZF6N8qlGCTYG9cmnIkGdRYglu6-pUBR9EvcbUZYUxd-zOo6BHv6BITK502-FaAx57ZPAryJH8hlRUoMqQHIhR03H7_OWH9sG2HeEuwjDmmTao9EcuZCgDUDyjyIo3Hv8ES7y89n9f-jt-jvEHskaJEFOs0HtbRnk9I-qMMTERiHtIikQZoU",
+      image: "/images/Slides/pepe-nero-72964.jpg",
       title: "Perfection to Detail",
       subtitle: "We want exactly what you envision"
+    },
+    {
+      image: "/images/Slides/No Arm.jpg",
+      title: "Quality Glazing",
+      subtitle: "Reliable and durable glass solutions"
     }
   ];
 
   return (
     <div>
       {/* Hero Slider Section */}
-      <section className="relative h-[600px] w-full overflow-hidden">
+      <section className="relative h-[750px] w-full overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           loop={true}
