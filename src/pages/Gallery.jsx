@@ -1,48 +1,51 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { galleryCategories, galleryItems } from '../data/galleryData';
+import { galleryCategories, galleryProjects } from '../data/galleryData';
 
 export default function Gallery() {
   const [filter, setFilter] = useState('all');
-  const [lightboxIndex, setLightboxIndex] = useState(null);
-  const navigate = useNavigate();
+  const [activeProjectIndex, setActiveProjectIndex] = useState(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  // Filter items based on active category key
-  const filteredItems = filter === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === filter);
+  // Filter projects based on active category key
+  const filteredProjects = filter === 'all' 
+    ? galleryProjects 
+    : galleryProjects.filter(project => project.category === filter);
 
-  // Helper to compute count for each category
+  // Helper to compute count of projects for each category
   const getCategoryCount = (categoryKey) => {
     if (categoryKey === 'all') {
-      return galleryItems.length;
+      return galleryProjects.length;
     }
-    return galleryItems.filter(item => item.category === categoryKey).length;
+    return galleryProjects.filter(project => project.category === categoryKey).length;
   };
 
   // Lightbox navigation functions
   const openLightbox = (index) => {
-    setLightboxIndex(index);
+    setActiveProjectIndex(index);
+    setActiveImageIndex(0);
   };
 
   const closeLightbox = () => {
-    setLightboxIndex(null);
+    setActiveProjectIndex(null);
+    setActiveImageIndex(0);
   };
 
+  const activeProject = activeProjectIndex !== null ? filteredProjects[activeProjectIndex] : null;
+
   const handleNext = () => {
-    if (lightboxIndex === null) return;
-    setLightboxIndex((prevIndex) => (prevIndex + 1) % filteredItems.length);
+    if (!activeProject) return;
+    setActiveImageIndex((prevIndex) => (prevIndex + 1) % activeProject.images.length);
   };
 
   const handlePrev = () => {
-    if (lightboxIndex === null) return;
-    setLightboxIndex((prevIndex) => (prevIndex - 1 + filteredItems.length) % filteredItems.length);
+    if (!activeProject) return;
+    setActiveImageIndex((prevIndex) => (prevIndex - 1 + activeProject.images.length) % activeProject.images.length);
   };
 
   // Keyboard shortcut listener for Lightbox
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (lightboxIndex === null) return;
+      if (activeProjectIndex === null) return;
       if (e.key === 'ArrowRight') {
         handleNext();
       } else if (e.key === 'ArrowLeft') {
@@ -54,7 +57,7 @@ export default function Gallery() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxIndex, filteredItems]);
+  }, [activeProjectIndex, activeImageIndex, filteredProjects]);
 
   return (
     <div className="relative">
@@ -109,14 +112,14 @@ export default function Gallery() {
 
         {/* Gallery Grid (Dynamic Bento Grid with Zoom & Detail Reveal on Hover) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
-          {filteredItems.map((item, index) => {
+          {filteredProjects.map((project, index) => {
             // Disable grid item expanding for categories with 3 or fewer items
             // so they align cleanly side-by-side or stack neatly.
-            const isLarge = item.large && filteredItems.length > 3;
+            const isLarge = project.large && filteredProjects.length > 3;
 
             return (
               <div
-                key={item.id}
+                key={project.id}
                 onClick={() => openLightbox(index)}
                 className={`soft-box flex flex-col overflow-hidden group cursor-pointer relative ${
                   isLarge ? 'md:col-span-2 md:row-span-2' : ''
@@ -124,10 +127,10 @@ export default function Gallery() {
               >
                 <div className="w-full h-full relative overflow-hidden flex-grow bg-surface-container">
                   <img 
-                    alt={`${item.title} at ${item.location}`} 
+                    alt={`${project.title} at ${project.location}`} 
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                    src={item.image}
+                    src={project.images[0]}
                   />
                   {/* Subtle dark overlay gradient for readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-85 transition-opacity duration-300 group-hover:opacity-95"></div>
@@ -135,16 +138,23 @@ export default function Gallery() {
                 {/* Content Overlay */}
                 <div className="absolute bottom-0 left-0 w-full p-[10px_20px_12px_16px] text-white z-10 transition-transform duration-300 group-hover:-translate-y-[2px]">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-primary-fixed-dim block mb-1">
-                    {item.category}
+                    {project.category}
                   </span>
                   <h3 className="text-[18px] md:text-headline-sm font-headline-sm leading-snug line-clamp-1 mb-1 font-semibold">
-                    {item.title}
+                    {project.title}
                   </h3>
                   <p className="text-body-md font-body-md text-surface-variant flex items-center gap-1 opacity-90">
                     <span className="material-symbols-outlined text-[15px] text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
-                    {item.location}
+                    {project.location}
                   </p>
                 </div>
+                {/* Multi-image badge */}
+                {project.images.length > 1 && (
+                  <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[11px] font-semibold px-2 py-1 rounded border border-white/10 flex items-center gap-1">
+                    <span className="material-symbols-outlined text-[12px]">collections</span>
+                    {project.images.length} Photos
+                  </div>
+                )}
               </div>
             );
           })}
@@ -152,7 +162,7 @@ export default function Gallery() {
       </main>
 
       {/* Premium Lightbox Modal (Glassmorphic Backdrop + Navigation + Info Box) */}
-      {lightboxIndex !== null && (
+      {activeProjectIndex !== null && activeProject && (
         <div 
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/95 backdrop-blur-md transition-opacity duration-300"
           onClick={closeLightbox}
@@ -167,24 +177,32 @@ export default function Gallery() {
           </button>
 
           {/* Navigation Controls */}
-          <button 
-            onClick={(e) => { e.stopPropagation(); handlePrev(); }}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white bg-white/5 hover:bg-white/15 border border-white/10 rounded-full p-4 transition-all z-10 focus:outline-none hidden sm:flex items-center justify-center"
-            aria-label="Previous image"
-          >
-            <span className="material-symbols-outlined text-[28px] -translate-x-[2px]">arrow_back_ios</span>
-          </button>
-          <button 
-            onClick={(e) => { e.stopPropagation(); handleNext(); }}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white bg-white/5 hover:bg-white/15 border border-white/10 rounded-full p-4 transition-all z-10 focus:outline-none hidden sm:flex items-center justify-center"
-            aria-label="Next image"
-          >
-            <span className="material-symbols-outlined text-[28px] translate-x-[2px]">arrow_forward_ios</span>
-          </button>
+          {activeProject.images.length > 1 && (
+            <>
+              <button 
+                onClick={(e) => { e.stopPropagation(); handlePrev(); }}
+                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white bg-white/5 hover:bg-white/15 border border-white/10 rounded-full p-4 transition-all z-10 focus:outline-none hidden sm:flex items-center justify-center"
+                aria-label="Previous image"
+              >
+                <span className="material-symbols-outlined text-[28px] -translate-x-[2px]">arrow_back_ios</span>
+              </button>
+              <button 
+                onClick={(e) => { e.stopPropagation(); handleNext(); }}
+                className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white bg-white/5 hover:bg-white/15 border border-white/10 rounded-full p-4 transition-all z-10 focus:outline-none hidden sm:flex items-center justify-center"
+                aria-label="Next image"
+              >
+                <span className="material-symbols-outlined text-[28px] translate-x-[2px]">arrow_forward_ios</span>
+              </button>
+            </>
+          )}
 
           {/* Touch navigation helper on mobile */}
-          <div className="absolute inset-y-0 left-0 w-1/4 sm:hidden z-10" onClick={(e) => { e.stopPropagation(); handlePrev(); }}></div>
-          <div className="absolute inset-y-0 right-0 w-1/4 sm:hidden z-10" onClick={(e) => { e.stopPropagation(); handleNext(); }}></div>
+          {activeProject.images.length > 1 && (
+            <>
+              <div className="absolute inset-y-0 left-0 w-1/4 sm:hidden z-10" onClick={(e) => { e.stopPropagation(); handlePrev(); }}></div>
+              <div className="absolute inset-y-0 right-0 w-1/4 sm:hidden z-10" onClick={(e) => { e.stopPropagation(); handleNext(); }}></div>
+            </>
+          )}
 
           {/* Image & Detail Canvas */}
           <div 
@@ -193,8 +211,8 @@ export default function Gallery() {
           >
             <div className="relative group max-h-[60vh] flex items-center justify-center">
               <img 
-                src={filteredItems[lightboxIndex].image} 
-                alt={`${filteredItems[lightboxIndex].title} at ${filteredItems[lightboxIndex].location}`} 
+                src={activeProject.images[activeImageIndex]} 
+                alt={`${activeProject.title} at ${activeProject.location}`} 
                 className="max-h-[60vh] max-w-full object-contain rounded shadow-2xl border border-white/10"
               />
             </div>
@@ -202,34 +220,24 @@ export default function Gallery() {
             {/* Project Specifications Block */}
             <div className="mt-6 text-center text-white px-4">
               <span className="text-xs uppercase tracking-widest text-primary-fixed-dim font-bold block mb-1">
-                {filteredItems[lightboxIndex].category}
+                {activeProject.category}
               </span>
               <h2 className="text-xl md:text-3xl font-headline-xl tracking-tight mb-2 font-bold">
-                {filteredItems[lightboxIndex].title}
+                {activeProject.title}
               </h2>
               <p className="text-body-lg text-surface-variant flex items-center justify-center gap-1 font-body-lg">
                 <span className="material-symbols-outlined text-[18px] text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
-                {filteredItems[lightboxIndex].location}
+                {activeProject.location}
               </p>
-
-              {/* View details action to project specifications page */}
-              <button
-                onClick={() => {
-                  closeLightbox();
-                  navigate('/project-detail');
-                }}
-                className="mt-6 px-6 py-2.5 bg-secondary hover:bg-secondary-container text-white hover:text-on-secondary-container rounded font-label-md text-label-md uppercase tracking-wider transition-all shadow-md inline-flex items-center gap-2 hover:-translate-y-[1px]"
-              >
-                View Project Specs
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
             </div>
           </div>
 
           {/* Image Counter Badge */}
-          <div className="absolute bottom-6 bg-white/10 backdrop-blur-md border border-white/10 px-4 py-1.5 rounded-full text-white/80 text-xs font-semibold uppercase tracking-wider">
-            {lightboxIndex + 1} / {filteredItems.length}
-          </div>
+          {activeProject.images.length > 1 && (
+            <div className="absolute bottom-6 bg-white/10 backdrop-blur-md border border-white/10 px-4 py-1.5 rounded-full text-white/80 text-xs font-semibold uppercase tracking-wider">
+              {activeImageIndex + 1} / {activeProject.images.length}
+            </div>
+          )}
         </div>
       )}
     </div>

@@ -5,9 +5,9 @@ export default function AboutUs() {
     <div>
       {/* Hero Section */}
       <section className="relative h-hero-height flex items-center justify-center bg-surface-container-high overflow-hidden shadow-[0_3px_5px_rgba(136,136,136,0.5)]">
-        <img 
-          alt="Industrial glass manufacturing facility with glowing orange hot glass and machinery" 
-          className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" 
+        <img
+          alt="Industrial glass manufacturing facility with glowing orange hot glass and machinery"
+          className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuACKrQuviQ4c6hOyKi5YuNL78UnB4M_k1A3vaHrl3fKnXO7g8iQCJV3wXtBnKXrom3aG7VL_PzaoG2bnAlJ4k7MSK-EYW-55bRzRbg68W4OMPCn9jMhia_KXMuCnQ3Ui0V7pWKn5o8f1o_qJQQyg-mObALRlPHq0J84h21mt7pnL4Lx_hHods2mjIUVi5Mpfw5vh4AqRN_7-mqIPy1SaehNKmUuG3T6byCV29OevnhVTkhYVgKpc5-rKXm6JV9JAMGX9qUxlQCSKmA"
         />
         <div className="absolute inset-0 bg-overlay-black opacity-50"></div>
@@ -23,16 +23,19 @@ export default function AboutUs() {
           <div>
             <h2 className="text-headline-lg font-headline-lg text-primary mb-6">Our History</h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant mb-6">
-              Since 1996, Green Glass provides a full range of commercial and residential aluminum storefront and curtain wall systems and other glazing requirement. We service the greater southern California area such as Los Angeles county, Orange county, San Bernardino, and San Diego.
+              Based in Southern California since 1996, Green Glass is a professional glazing company built on experience, reliability, and quality workmanship. With 30 years of industry experience, we provide glazing services for commercial projects, working with contractors, owners, and project teams to support each scope with care and professionalism.
             </p>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              Our team of dedicated professionals has over 24 years’ experience. Our commitment to our customer is to provide affordable but exceptional quality service and products. We pride ourselves in getting the job done right and on time.
+              Our work is grounded in a strong understanding of the construction process, from estimating and coordination to installation in the field. We approach every project with attention to detail, clear communication, and a commitment to completing work that meets project requirements and client expectations.
+            </p>
+            <p className="text-body-lg font-body-lg text-on-surface-variant">
+              At Green Glass, we take pride in being a dependable partner throughout every stage of the project. Through experienced workmanship and a client focused approach, we continue to deliver glazing solutions that reflect professionalism, consistency, and trust.
             </p>
           </div>
           <div className="soft">
-            <img 
-              alt="Team of professional engineers discussing blueprints in a bright modern office" 
-              className="w-full h-auto rounded-DEFAULT" 
+            <img
+              alt="Team of professional engineers discussing blueprints in a bright modern office"
+              className="w-full h-auto rounded-DEFAULT"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1m0A-PCvMX_-PtPIDd8VMKV7WmbKXzN3PR1-8uk9L5QU9SOBLgjjIZQ47NXhGFF69pzClqTVczxp7mn5FRoLdRmb_c5Tpiy2w7Bkev5WMlshgCii_4LpEMdtcNcmLUzMPH8jxmhGK4mAHCd_1Y5V4lrg73V7yj_7Cos6gH-t0yFdUb00YEGY8TUGizz7Jhjfn_httZf14NsNMu7SjT-H4R-5alwLei4crL8b19SFpy0N7MciQbBXJWFM4gzIFO6AbmBwbZc9v7Js"
             />
           </div>
@@ -59,9 +62,9 @@ export default function AboutUs() {
                   </div>
                 </div>
                 <div className="h-full">
-                  <img 
-                    alt="Modern commercial building featuring aluminum curtain wall system" 
-                    className="w-full h-64 md:h-full object-cover rounded-DEFAULT shadow-sm" 
+                  <img
+                    alt="Modern commercial building featuring aluminum curtain wall system"
+                    className="w-full h-64 md:h-full object-cover rounded-DEFAULT shadow-sm"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4WefRhLioMCE_-81e2ptLxV-whroiM85-68djesVGfFYysmvdCki_WOqJ6K8Akral9ySNwT0hRFQfm87nxAdbAYn-rDX9-RdZ931RHN4k-VxRiT_f2y9N_NyA1tDW_ZhVTzRkhg0wAmOmp8WPtYvesjPGA3fLeCc1F3mJHaBM3xf3OuDGZCKOuAKu8APXf8AJVoJbj5AXpMLzAUrvpvBAt7uiJho_ttGYWr7XvXcaBOMDmnciZUZpVenBJSHN6sTEPw7VgSviBsU"
                   />
                 </div>
@@ -84,9 +87,9 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
           {/* Large Feature Cell */}
           <div className="soft md:col-span-2 md:row-span-2 relative overflow-hidden group p-0">
-            <img 
-              alt="Close up of precision glass cutting tool making a clean line on thick glass" 
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            <img
+              alt="Close up of precision glass cutting tool making a clean line on thick glass"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdgDafcpXGUOVbV85KIhVbWp7Vj3pEDFCuchnLpqg7h5eMFEvrLfWtEYgG5K_7sbwiyt2QDqgPads0Zuj5qZ7PQpaQuQ-Ar0xlx7ezcPg-zOt9oCReENDOkpaaPuUFnQfUMxkx2ahciKmgnodm-D8TQgMFqIbMEk8pozXdhbBCMJqhc7g2QSS7dl0TxI1_xwykRQ-u4FES9vxiBtXQ3M6REwj4dmqNX-7mYU-c2m10mUolKOeRR7FeMR-PvqbsU9k8VcOtC_wdK3o"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-overlay-black to-transparent"></div>
@@ -108,9 +111,9 @@ export default function AboutUs() {
           </div>
           {/* Medium Cell */}
           <div className="soft md:col-span-2 md:row-span-1 relative overflow-hidden group p-0">
-            <img 
-              alt="Modern corporate building featuring extensive structural glass facade" 
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            <img
+              alt="Modern corporate building featuring extensive structural glass facade"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4ZCAWNOO90g0xmTBAscS3vspuk3vC-w8LSetVeVZtlYSKu_ZNVhXYxHtu2sUIIVNwzAGQeUH8CMsxLEtmCf1cLl0lX4vYR-W-kD38YQFHcARxcmARATW2nEM4511mplfHML6M64SNG4fqwAmmBQ30NM68kGIJZOSqTNUA5LmUmN0qsAo9SiX3ER8G_WnohtlLr9DXrZRWggu0iWasFZuttWXFXiFxS0VkYItFUrfAllq_zAqJYsz_QgZ1hx3Qe8J0xPyfF-lPsc"
             />
             <div className="absolute inset-0 bg-overlay-black opacity-40"></div>

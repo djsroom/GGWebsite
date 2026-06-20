@@ -58,8 +58,8 @@ export default function Home() {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className="relative flex items-center justify-center">
-              <div 
-                className="absolute inset-0 bg-cover bg-center" 
+              <div
+                className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               ></div>
               <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -70,7 +70,7 @@ export default function Home() {
                 <p className="text-on-primary font-headline-sm text-headline-sm mb-8 opacity-90 drop-shadow">
                   {slide.subtitle}
                 </p>
-                <button 
+                <button
                   onClick={() => navigate('/contact-us')}
                   className="px-8 py-3 bg-transparent border-2 border-on-primary text-on-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-secondary hover:border-secondary transition-all duration-300 shadow-[0_3px_5px_rgba(136,136,136,0.5)]"
                 >
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-lg text-body-lg text-text-primary leading-relaxed">
-            <strong className="text-primary font-semibold">Green Glass</strong> conducts glass made for commercial windows to residential homes. From the moment a blueprint is completed for construction, we use our cutting-edge technology to formulate glass, whether it be a window or walk-way, to fit the measurements needed.
+            <strong className="text-primary font-semibold">Green Glass</strong> provides professional glazing services for commercial glass, storefronts, doors, and windows. Built on experience, reliability, and quality workmanship, we are committed to delivering dependable service with care and professionalism.
           </p>
         </div>
       </section>
@@ -102,8 +102,8 @@ export default function Home() {
             {/* Feature Card 1 */}
             <div className="bg-surface rounded shadow-[3px_3px_5px_#888888] p-[10px_20px_20px_10px] transform hover:-translate-y-1 transition-transform duration-300">
               <div className="h-48 w-full mb-6 rounded overflow-hidden relative">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center" 
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMqokJqy5Ia61BrBM9C5m4yYZr6EQaH5-t76RW_Pek9SmsLjnhUd_W761DcxzdGMYkobztxmTMXzTH0xzhdYOLDUjE8IJdXUFrUtDEJXJmt9jugNkH5mGB0zw98J_k3TKXuL2mGOnYdBKV13gxj4FqPGuE5co3XF4KnnAOOoaldSjTHG8oOf9NMZBaBNvQ57zOk4diV9FtabwA2UFjDQW75kyLbksRc1Ycat8p9Y-VtFEU9Ezv9ezrub9jHBYzWd13BYYUPk7dal4')` }}
                 ></div>
               </div>
@@ -115,8 +115,8 @@ export default function Home() {
             {/* Feature Card 2 */}
             <div className="bg-surface rounded shadow-[3px_3px_5px_#888888] p-[10px_20px_20px_10px] transform hover:-translate-y-1 transition-transform duration-300">
               <div className="h-48 w-full mb-6 rounded overflow-hidden relative">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center" 
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCY0DgcKYe0zWvA0kikcq23bxoighTv4pUqLnDMCuCI7oLtC7lcK6DAisNxQnYpQaSFt98RwhrXWZraCLoKzd4BLjeeP3PwU7xgiVxhA_4Q3n4nO2tg8zNs7w9PCUvf3Dx5fEmTKD0bs5j4iKgo6MA2_pNd0UouScQiFLNzzc4xc5d6Vm9rNNBohRLnXTklitZwD1isZvfvMpTK6daZD_4OGrZvRSYW2zb_jjw5DUXjMXXwtzUl3jxp05FMkLGvAtJpNfX4TpGaIaw')` }}
                 ></div>
               </div>
@@ -128,8 +128,8 @@ export default function Home() {
             {/* Feature Card 3 */}
             <div className="bg-surface rounded shadow-[3px_3px_5px_#888888] p-[10px_20px_20px_10px] transform hover:-translate-y-1 transition-transform duration-300">
               <div className="h-48 w-full mb-6 rounded overflow-hidden relative">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center" 
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1-jLTVssPSUAFbueB_4YtB-UsFa9oVe5Mifyd5CFmoYv1trihuH4S0YqtXUytNC8m0L7E2FLyc8re-ZZOuPWCFFaSHkSOrF7fUmt2JVM6NX9ANErWArS-HSMrr7qO6V27I5Bz7-zjEcdT77i5tJAJB-Xmq95rlwDL_VREgptvaMiShs8d2fnmNigd-hnw1Rjza-qn5zdaGWhmYdLcrcmAAs8MdiwbBI5CqnJjVxWZocC45FbC2fsZI88139AK0NYvc3zKjW1jvKw')` }}
                 ></div>
               </div>
