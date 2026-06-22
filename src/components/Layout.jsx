@@ -30,26 +30,25 @@ export default function Layout() {
       {/* TopNavBar */}
       <header
         className={`w-full top-0 sticky z-50 shadow-[0_3px_5px_rgba(136,136,136,0.3)] dark:shadow-none header-transition ${isScrolled
-            ? 'header-scrolled bg-black text-white'
-            : 'bg-surface dark:bg-surface-dark text-on-surface'
+          ? 'header-scrolled bg-black text-white'
+          : 'bg-surface dark:bg-surface-dark text-on-surface'
           }`}
         id="site-header"
       >
         <div className="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
           {/* Brand Logo */}
-          <Link 
-            className="flex items-center gap-3 h-full group" 
+          <Link
+            className="flex items-center gap-3 h-full group"
             to="/"
           >
-            <img 
-              src="/logo-symbol.png" 
-              alt="Green Glass Logo" 
+            <img
+              src="/logo-symbol.png"
+              alt="Green Glass Logo"
               className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
-            <span 
-              className={`text-headline-md font-headline-md font-bold tracking-tight transition-colors duration-300 ${
-                isScrolled ? 'text-white' : 'text-primary dark:text-primary-fixed'
-              }`}
+            <span
+              className={`text-headline-md font-headline-md font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-white' : 'text-primary dark:text-primary-fixed'
+                }`}
             >
               Green Glass
             </span>
@@ -127,9 +126,9 @@ export default function Layout() {
           {/* Brand / Copyright */}
           <div className="flex flex-col space-y-4">
             <Link to="/" className="flex items-center gap-3 w-fit group">
-              <img 
-                src="/logo-symbol.png" 
-                alt="Green Glass Logo" 
+              <img
+                src="/logo-symbol.png"
+                alt="Green Glass Logo"
                 className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <span className="text-headline-sm font-headline-sm text-on-error font-bold">
@@ -141,17 +140,15 @@ export default function Layout() {
             </p>
           </div>
           {/* Links Column 1 */}
-          <div className="flex flex-col space-y-3">
+          {/* <div className="flex flex-col space-y-3">
             <h4 className="text-on-error text-label-md font-label-md uppercase tracking-wider mb-2">Services</h4>
             <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#installation">Installation</a>
             <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#eco-friendly">Eco-Friendly Construction</a>
-          </div>
+          </div> */}
           {/* Links Column 2 */}
           <div className="flex flex-col space-y-3">
             <h4 className="text-on-error text-label-md font-label-md uppercase tracking-wider mb-2">Company</h4>
             <Link className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" to="/contact-us">Contact Us</Link>
-            <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#privacy">Privacy Policy</a>
-            <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#search">Search</a>
           </div>
         </div>
       </footer>
