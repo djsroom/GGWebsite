@@ -13,32 +13,32 @@ export default function Home() {
 
   const slides = [
     {
-      image: "/images/Slides/breather-181289.jpg",
+      image: "/images/Slides/Slide1.jpg",
       title: "Green Glass",
       subtitle: "Constructed to fit your needs!"
     },
     {
-      image: "/images/Slides/nico-villanueva-156055.jpg",
+      image: "/images/Slides/Slide2.jpg",
       title: "Commercial to Residential",
       subtitle: "Sizes from buildings to homes!"
     },
     {
-      image: "/images/Slides/kristine-weilert-316176.jpg",
+      image: "/images/Slides/Slide3.jpg",
       title: "Home Goods",
       subtitle: "Shapes to fit your room!"
     },
     {
-      image: "/images/Slides/the-anchor-28036.jpg",
+      image: "/images/Slides/Slide4.jpg",
       title: "Installation Made Easy",
       subtitle: "Working with your vision!"
     },
     {
-      image: "/images/Slides/pepe-nero-72964.jpg",
+      image: "/images/Slides/Slide5.jpg",
       title: "Perfection to Detail",
       subtitle: "We want exactly what you envision"
     },
     {
-      image: "/images/Slides/gg-anniversary.jpg",
+      image: "/images/Slides/Slide6.jpg",
       title: "Celebrating 30 years in business!",
       subtitle: "Thank you for being a part of our journey!"
     }
@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Slider Section */}
-      <section className="relative h-[750px] w-full overflow-hidden">
+      <section className="relative h-[850px] w-full overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           loop={true}
@@ -69,12 +69,16 @@ export default function Home() {
               ></div>
               <div className="absolute inset-0 bg-black/40 z-10"></div>
               <div className="relative z-20 text-center px-gutter max-w-3xl mx-auto py-8 rounded-xl">
-                <h1 className="text-on-primary font-headline-xl text-headline-xl mb-4 tracking-tight drop-shadow-md">
-                  {slide.title}
-                </h1>
-                <p className="text-on-primary font-headline-sm text-headline-sm mb-8 opacity-90 drop-shadow">
-                  {slide.subtitle}
-                </p>
+                {index === 0 && (
+                  <>
+                    <h1 className="text-on-primary font-headline-xl text-headline-xl mb-4 tracking-tight drop-shadow-md">
+                      {slide.title}
+                    </h1>
+                    <p className="text-on-primary font-headline-sm text-headline-sm mb-8 opacity-90 drop-shadow">
+                      {slide.subtitle}
+                    </p>
+                  </>
+                )}
                 <button
                   onClick={() => navigate('/contact-us')}
                   className="px-8 py-3 bg-transparent border-2 border-on-primary text-on-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-secondary hover:border-secondary transition-all duration-300 shadow-[0_3px_5px_rgba(136,136,136,0.5)]"

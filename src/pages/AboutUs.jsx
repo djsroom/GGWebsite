@@ -112,9 +112,9 @@ export default function AboutUs() {
           {/* Medium Cell */}
           <div className="soft md:col-span-2 md:row-span-1 relative overflow-hidden group p-0">
             <img
-              alt="Modern corporate building featuring extensive structural glass facade"
+              alt="Modern mixed-use building featuring glass balconies and architectural metal cladding"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4ZCAWNOO90g0xmTBAscS3vspuk3vC-w8LSetVeVZtlYSKu_ZNVhXYxHtu2sUIIVNwzAGQeUH8CMsxLEtmCf1cLl0lX4vYR-W-kD38YQFHcARxcmARATW2nEM4511mplfHML6M64SNG4fqwAmmBQ30NM68kGIJZOSqTNUA5LmUmN0qsAo9SiX3ER8G_WnohtlLr9DXrZRWggu0iWasFZuttWXFXiFxS0VkYItFUrfAllq_zAqJYsz_QgZ1hx3Qe8J0xPyfF-lPsc"
+              src="/images/GGAboutUs.jpg"
             />
             <div className="absolute inset-0 bg-overlay-black opacity-40"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">

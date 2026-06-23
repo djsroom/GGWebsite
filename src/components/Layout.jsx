@@ -140,11 +140,11 @@ export default function Layout() {
             </p>
           </div>
           {/* Links Column 1 */}
-          {/* <div className="flex flex-col space-y-3">
-            <h4 className="text-on-error text-label-md font-label-md uppercase tracking-wider mb-2">Services</h4>
-            <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#installation">Installation</a>
-            <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#eco-friendly">Eco-Friendly Construction</a>
-          </div> */}
+          <div className="flex flex-col space-y-3">
+            <h4 className="text-on-error text-label-md font-label-md uppercase tracking-wider mb-2"></h4>
+            {/* <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#installation">Installation</a>
+            <a className="text-surface-variant text-body-md font-body-md hover:text-secondary-fixed transition-colors duration-200 hover:translate-x-1 focus:ring-1 focus:ring-primary-fixed-dim rounded w-fit" href="#eco-friendly">Eco-Friendly Construction</a> */}
+          </div>
           {/* Links Column 2 */}
           <div className="flex flex-col space-y-3">
             <h4 className="text-on-error text-label-md font-label-md uppercase tracking-wider mb-2">Company</h4>
