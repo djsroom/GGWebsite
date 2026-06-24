@@ -37,18 +37,27 @@ export default function ContactUs() {
               Norwalk, CA 90650 USA
             </address>
 
-            <div className="flex flex-col gap-5 border-t border-outline-variant pt-6">
-              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="tel:+15624046100">
-                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">call</span>
-                <span className="font-semibold">+1 (562) 404-6100</span>
+            <div className="flex flex-col gap-6 border-t border-outline-variant pt-6">
+              <a className="flex items-start gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="tel:+15624046100">
+                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200 mt-1">call</span>
+                <div className="flex flex-col">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-secondary mb-0.5">Phone</span>
+                  <span className="font-semibold text-on-surface">+1 (562) 404-6100</span>
+                </div>
               </a>
-              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="mailto:info@greenglassus.com">
-                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">mail</span>
-                <span className="font-semibold">info@greenglassus.com</span>
+              <a className="flex items-start gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="mailto:info@greenglassus.com">
+                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200 mt-1">mail</span>
+                <div className="flex flex-col">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-secondary mb-0.5">General Inquiries</span>
+                  <span className="font-semibold text-on-surface">info@greenglassus.com</span>
+                </div>
               </a>
-              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="mailto:peter@greenglassus.com">
-                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">person</span>
-                <span className="font-semibold">peter@greenglassus.com</span>
+              <a className="flex items-start gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="mailto:peter@greenglassus.com">
+                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200 mt-1">person</span>
+                <div className="flex flex-col">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-secondary mb-0.5">General Manager</span>
+                  <span className="font-semibold text-on-surface">peter@greenglassus.com</span>
+                </div>
               </a>
             </div>
           </div>
