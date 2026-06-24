@@ -38,7 +38,7 @@ export default function ContactUs() {
             </address>
 
             <div className="flex flex-col gap-5 border-t border-outline-variant pt-6">
-              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="tel:+15624056100">
+              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="tel:+15624046100">
                 <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">call</span>
                 <span className="font-semibold">+1 (562) 404-6100</span>
               </a>
@@ -46,8 +46,8 @@ export default function ContactUs() {
                 <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">mail</span>
                 <span className="font-semibold">info@greenglassus.com</span>
               </a>
-              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="mailto:info@greenglassus.com">
-                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">GM</span>
+              <a className="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200 group" href="mailto:peter@greenglassus.com">
+                <span className="material-symbols-outlined text-primary group-hover:text-secondary text-2xl transition-colors duration-200">person</span>
                 <span className="font-semibold">peter@greenglassus.com</span>
               </a>
             </div>

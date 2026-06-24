@@ -36,7 +36,7 @@ export default function AboutUs() {
             <img
               alt="Team of professional engineers discussing blueprints in a bright modern office"
               className="w-full h-auto rounded-DEFAULT"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1m0A-PCvMX_-PtPIDd8VMKV7WmbKXzN3PR1-8uk9L5QU9SOBLgjjIZQ47NXhGFF69pzClqTVczxp7mn5FRoLdRmb_c5Tpiy2w7Bkev5WMlshgCii_4LpEMdtcNcmLUzMPH8jxmhGK4mAHCd_1Y5V4lrg73V7yj_7Cos6gH-t0yFdUb00YEGY8TUGizz7Jhjfn_httZf14NsNMu7SjT-H4R-5alwLei4crL8b19SFpy0N7MciQbBXJWFM4gzIFO6AbmBwbZc9v7Js"
+              src="/images/GGAboutUs1.jpg"
             />
           </div>
         </div>
